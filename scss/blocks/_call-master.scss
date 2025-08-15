@@ -1,0 +1,32 @@
+.call-master {
+    background: rgba(205, 205, 205, 0.3);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 90px;
+    }
+    &__left {
+        // max-width: 780px;
+        width: 55%;
+
+        padding: 60px 0 60px 120px;
+    }
+    &__right {
+        width: 35%;
+        margin: auto 60px 0 0;
+    }
+    &__text {
+        margin: 44px 0 28px 0;
+        font-weight: 600;
+        font-size: 20px;
+        color: $dark-gray;
+    }
+    &__btn {
+        padding: 14px 28px;
+        background: $red;
+        font-size: 16px;
+    }
+}

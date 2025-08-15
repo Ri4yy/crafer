@@ -1,0 +1,106 @@
+.filter {
+    border: 1px solid rgba(154, 154, 152, 0.26);
+    border-radius: 30px;
+    background: #f0f0ef;
+    padding: 27px 21px;
+
+    @media(max-width: $breakpoint992) {
+        padding: 40px 24px;
+        background: #f4f4f4;
+        
+        height: 100dvh;
+        overflow-y: scroll;
+
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+
+        border-radius: 0;
+        border: none;
+    }
+    &.open {
+        display: block;
+        z-index: 9;
+
+        & .filter__wrapper {
+            max-width: 100%;
+        }
+    }
+
+    &__top {
+        margin-bottom: 24px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 120%;
+            color: #323232;
+        }
+    }
+    &__wrapper {
+        @media(max-width: $breakpoint992) {
+            max-width: 300px;
+        }
+    }
+    &__group-btn {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        @media(max-width: $breakpoint992) {
+            // max-width: 300px;
+        }
+    }
+    &__btn {
+        border-radius: 14px;
+        padding: 10px;
+        width: 100%;
+
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+        transition: all .3s;
+        cursor: pointer;
+
+        &--clear {
+            color: #9a9a98;
+            text-decoration: underline !important;
+
+            &:hover {
+                color: #d13939;
+            }
+        }
+        &--show {
+            background: $dark-gray;
+            color: #f1f1f1;
+
+            &:hover {
+                background: #2d2d2d;
+            }
+        }
+    }
+
+    &__close {
+        display: none;
+
+        @media(max-width: $breakpoint992) {
+            position: absolute;
+            top: 17px;
+            right: 24px;
+
+            display: flex;
+        }
+
+        & img {
+            pointer-events: none;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.catalog-swiper-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+    padding: 252px 27px 25px 27px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+    background-color: rgba(205, 205, 205, .3);
+    height: 100%;
+
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+        color: $dark-gray;
+    }
+}

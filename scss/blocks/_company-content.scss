@@ -1,0 +1,46 @@
+.company-content {
+ 
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    &__row {
+        &:nth-child(even) {
+            & .company-content__item {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+    &__description {
+        width: 63%;
+
+        & p {
+            font-weight: 500;
+            color: $dark-gray;
+            font-size: 20px;
+
+            & span {
+                font-weight: 700;
+                color: $red;
+            }
+        }
+    }
+    &__image {
+        width: 37%;
+        border-radius: 20px;
+        overflow: hidden;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

@@ -1,13 +1,12 @@
 .header {
     position: relative;
-    background: #fff;
 
     &__wrapper {
         position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 29px 0;
+        padding: 40px 0;
         z-index: 2;
 
         @media(max-width: $breakpoint768) {
@@ -18,16 +17,27 @@
         }
     }
 
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+    }
     &__contacts {
         display: flex;
         flex-direction: column;
         align-items: end;
     }
     &__mail {
-
+        font-weight: 600;
+        font-size: 20px;
+        text-decoration: underline !important;
+        color: $red;
     }
     &__phone {
-
+        font-weight: 700;
+        font-size: 20px;
+        text-transform: lowercase;
+        color: $dark-gray;
     }
 }
 

@@ -1,0 +1,95 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &__gallery {
+        position: relative;
+        display: flex;
+
+        border-radius: 16px;
+        overflow: hidden;
+        aspect-ratio: 345 / 255;
+
+        & .hover-slider-indicator {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+
+            display: flex;
+            gap: 10px;
+
+            & .hover-slider-indicator-dot {
+                border-radius: 50%;
+                background: #fff;
+                width: 12px;
+                height: 12px;
+                transition: all .3s;
+
+                &.active {
+                    background: $red;
+                }
+            }
+        }
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__content {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    &__title {
+        margin-top: 10px;
+
+        font-weight: 700;
+        font-size: 24px;
+        color: $dark-gray;
+    }
+    &__subtitle {
+        margin-top: 6px;
+        font-weight: 500;
+        font-size: 20px;
+        color: $dark-gray;
+    }
+    &__price {
+        margin-top: 16px;
+        margin-bottom: 26px;
+
+        font-weight: 700;
+        font-size: 32px;
+        color: $dark-gray;
+    }
+
+    &__btns {
+        margin-block-start: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    &__link {
+        font-weight: 600;
+        font-size: 20px;
+        text-decoration: underline !important;
+        color: #979797;
+    }
+    &__btn {
+        border-radius: 30px;
+        padding: 10px;
+        background: $dark-gray;
+        width: 100%;
+
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        color: #fff;
+    }
+}

@@ -1,0 +1,45 @@
+.product-hits {
+    margin-top: 32px;
+
+    display: flex;
+    flex-direction: column;
+
+    @media(max-width: $breakpoint992) {
+        margin-top: 0;
+    } 
+
+    &__item {
+        border-radius: 10px;
+        padding: 10px 15px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &:nth-of-type(even) {
+            background: rgba(154, 154, 152, 0.22);
+        }
+
+        &-text {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 130%;
+            color: $dark-gray;
+
+            @media(max-width: $breakpoint600) {
+                font-size: 16px;
+            }
+        }
+        &-value {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 130%;
+            text-align: right;
+            color: $dark-gray;
+
+            @media(max-width: $breakpoint600) {
+                font-size: 16px;
+            }
+        }
+    }
+}

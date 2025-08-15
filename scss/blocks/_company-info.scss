@@ -1,0 +1,53 @@
+.company-info {
+
+    &__title {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    &__top {
+        max-width: 1300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        &-left {
+            
+        }
+    }
+    &__advantages {
+        border-radius: 20px;
+        background: rgba(205, 205, 205, 0.3);
+        padding: 60px 20px;
+
+        &-wrapper {
+            max-width: 1130px;
+            margin: 0 auto; 
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            
+            p {
+                font-family: $second-family;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 120%;
+                letter-spacing: 0.03em;
+                color: $dark-gray;
+            }
+        }
+    }
+}

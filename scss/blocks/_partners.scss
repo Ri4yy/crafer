@@ -1,0 +1,20 @@
+.partners {
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px; 
+    }
+    &__item {
+        background: rgba(205, 205, 205, 0.4);
+        border: 1px solid rgba(64, 64, 64, 0.2);
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 190px;
+    }
+}

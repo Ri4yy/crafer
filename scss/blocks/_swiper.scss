@@ -1,0 +1,12 @@
+.swiper {
+    &__btn {
+        border-radius: 5px;
+        background-color: $dark-gray;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}

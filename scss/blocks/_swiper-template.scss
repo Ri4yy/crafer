@@ -1,0 +1,20 @@
+.swiper-template {
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        background-color: $dark-gray;
+    }
+    &__bottom {
+        margin-top: 48px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__btns {
+        display: flex;
+        gap: 10px;
+    }
+}

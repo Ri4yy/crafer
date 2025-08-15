@@ -1,0 +1,15 @@
+.catalog-sections {
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+    &__item {
+        & .catalog-swiper-card {
+            &[data-status="active"] {
+                border: 1px solid $red;
+            }
+        }
+    }
+}

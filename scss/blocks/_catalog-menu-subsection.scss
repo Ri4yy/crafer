@@ -1,0 +1,44 @@
+.catalog-menu-subsection {
+    // display: flex;
+    // flex-wrap: wrap;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    column-gap: 48px;
+    row-gap: 12px;
+
+    &__link {
+        display: grid;
+        grid-template-columns: 96px auto;
+        align-items: center;
+        column-gap: 16px;
+
+        &:hover {
+            color: $main-color;
+            border-color: $main-color;
+        }
+
+        &-icon {
+            width: 96px;
+            height: 96px;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        &-content {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        &-name {
+            font-weight: 700;
+            font-size: 20px;
+            color: #000;
+        }
+        &-count {
+            font-weight: 500;
+            font-size: 16px;
+            color: $dark-gray;
+        }
+    }
+} 

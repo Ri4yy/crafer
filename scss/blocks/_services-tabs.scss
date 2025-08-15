@@ -1,0 +1,78 @@
+.services-tabs {
+    display: flex;
+    gap: 20px;
+
+    &__list {
+        max-width: 460px;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;  
+
+        & li {
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
+            padding: 16px;
+            background: rgba(205, 205, 205, 0.3);
+            width: 100%;
+            cursor: pointer;
+
+            & span {
+                max-width: 286px;
+                font-weight: 500;
+                font-size: 20px;
+                text-align: center;
+                color: $dark-gray;
+            }
+
+            &.active-tab {
+                box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+                background: rgba(205, 205, 205, 0.6);
+
+                & span {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    &__wrapper {
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+        background: rgba(205, 205, 205, 0.6);
+        border-radius: 20px;
+        padding: 30px 100px 30px 35px;
+        flex-grow: 1;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        color: $dark-gray;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 20px;
+        color: $dark-gray;
+        margin: 22px 0;
+    }
+    &__bottom {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+    }
+    &__btn {
+        border-radius: 30px;
+        padding: 14px 28px;
+        background: $dark-gray;
+        font-weight: 700;
+        font-size: 16px;
+        text-align: center;
+        color: #fff;
+    }
+    &__label {
+        font-weight: 500;
+        font-size: 16px;
+        color: $dark-gray;
+    }
+}

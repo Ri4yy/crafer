@@ -2,19 +2,35 @@
 
 html,
 body {
-    font-family: '';
+    font-family: $font-family;
     scroll-behavior: smooth;
+    background: #f1f1f1;
 }
 
 // Заголовки
 h1 {
-    color: $main-color;
+    font-family: $second-family;
+    font-weight: 400;
+    font-size: 40px;
+    color: $dark-gray;
 }
 h2 {
-    color: $main-color;
-}
-h3 {
-    color: $main-text;
+    font-family: $second-family;
+    font-weight: 400;
+    font-size: 40px;
+    color: $dark-gray;
+
+    @media(max-width: $breakpoint768) {
+        font-size: 40px;
+    }
+    @media(max-width: $breakpoint480) {
+        font-size: 32px;
+        padding-left: 28px;
+    }
+    @media(max-width: $breakpoint375) {
+        font-size: 25px;
+        padding-left: 24px;
+    }
 }
 
 // База
@@ -23,11 +39,17 @@ h3 {
     width: 100%;
     margin: 0 auto;
 
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     &__inner {
-        margin-top: 40px;
+        margin-top: 48px;
 
         @media(max-width: $breakpoint768) {
-            margin-top: 24px;
+            margin-top: 28px;
         }
     }
 
@@ -36,13 +58,6 @@ h3 {
     }
     @media(max-width: $breakpoint768) {
         padding: 0 $padding-sm;
-    }
-}
-.section {
-    margin-top: $section-top;
-
-    @media(max-width: $breakpoint768) {
-        margin-top: 90px;
     }
 }
 

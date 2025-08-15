@@ -1,0 +1,52 @@
+.hero {
+    padding-bottom: 40px;
+    
+    &__wrapper {
+        display: flex;
+        gap: 20px;
+    }
+    &__left {
+        width: 58%;
+        background: rgba(205, 205, 205, 0.6);
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+
+        display: flex;
+        justify-content: center;
+    }
+    &__right {
+        width: 42%;
+        
+        box-shadow:
+        inset -8px 0 16px -8px rgba(0,0,0,0.18),   /* справа */
+        inset 0 8px 16px -8px rgba(0,0,0,0.18);    /* снизу */
+        border-radius: 20px;
+        overflow: hidden;   
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        
+        max-width: 642px;
+        padding: 62px 16px;
+    }
+    &__title {
+        font-family: $second-family;
+        font-weight: 400;
+        font-size: 48px;
+        color: $dark-gray;
+    }
+    &__text {
+        margin-top: 20px;
+
+        font-weight: 500;
+        font-size: 20px;
+        color: $dark-gray;
+    }
+    &__btn {
+        margin-top: 48px;
+
+        background: $red;
+        width: fit-content;
+    }
+}

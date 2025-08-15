@@ -17,15 +17,25 @@
     &__link {
         display: block;
         font-weight: 500;
-        font-size: 18px;
-        color: $main-text;
+        font-size: 20px;
+        text-transform: lowercase;
+        text-align: center;
+        color: $dark-gray; 
 
         @media(max-width: $breakpoint1024) {
             font-size: 16px;
         }
 
         &--active {
-            color: $main-color;
+            border-radius: 10px;
+            padding: 10px 20px;
+            background: $dark-gray;
+            
+            font-weight: 600;
+            font-size: 20px;
+            text-transform: lowercase;
+            text-align: center;
+            color: #fafafa;
         }
     }
 }

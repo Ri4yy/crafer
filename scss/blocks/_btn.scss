@@ -1,0 +1,16 @@
+.btn {
+    border-radius: 30px;
+    padding: 16px 32px;
+
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #f1f1f1;
+
+    &--arrow {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        background: $dark-gray;
+    }
+}

@@ -1,0 +1,15 @@
+.promo {
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        column-gap: 20px;
+        row-gap: 36px;
+    }
+    &__item {
+        height: auto;
+    }
+    &__bottom {
+        padding: 48px 0 40px;
+    }
+}
