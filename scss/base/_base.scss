@@ -4,7 +4,7 @@ html,
 body {
     font-family: $font-family;
     scroll-behavior: smooth;
-    background: #f1f1f1;
+    background: #f6f6f6;
 }
 
 // Заголовки
@@ -21,15 +21,13 @@ h2 {
     color: $dark-gray;
 
     @media(max-width: $breakpoint768) {
-        font-size: 40px;
+        font-size: 32px;
     }
     @media(max-width: $breakpoint480) {
-        font-size: 32px;
-        padding-left: 28px;
+        font-size: 28px;
     }
     @media(max-width: $breakpoint375) {
-        font-size: 25px;
-        padding-left: 24px;
+        font-size: 24px;
     }
 }
 
@@ -48,8 +46,14 @@ h2 {
     &__inner {
         margin-top: 48px;
 
+        @media(max-width: $breakpoint1024) {
+            margin-top: 32px;
+        }
         @media(max-width: $breakpoint768) {
-            margin-top: 28px;
+            margin-top: 26px;
+        }
+        @media(max-width: $breakpoint480) {
+            margin-top: 20px;
         }
     }
 
@@ -69,6 +73,15 @@ h2 {
     }
     @media(max-width: $breakpoint768) {
         padding-left: $padding-sm;
+    }
+}
+
+.swiper-outer {
+    @media(max-width: 1464px) {
+        padding: 0 12px;
+    }
+    @media(max-width: $breakpoint1440) {
+        padding: 0;
     }
 }
 

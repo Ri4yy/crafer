@@ -5,6 +5,23 @@
         align-items: center;
         gap: 30px;
         background-color: $dark-gray;
+        transition: background 0.3s ease-in-out;
+
+        @media(max-width: $breakpoint480) {
+            gap: 16px;
+        }
+
+        & svg {
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+            background-color: #323232;
+
+            & svg {
+                transform: translateX(3px);
+            }
+        }
     }
     &__bottom {
         margin-top: 48px;
@@ -12,6 +29,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media(max-width: $breakpoint1024) {
+            margin-top: 32px;
+        }
+        @media(max-width: $breakpoint768) {
+            margin-top: 26px;
+        }
+        @media(max-width: $breakpoint480) {
+            margin-top: 20px;
+        }
     }
     &__btns {
         display: flex;

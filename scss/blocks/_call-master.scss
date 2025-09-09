@@ -7,26 +7,71 @@
         display: flex;
         justify-content: space-between;
         gap: 90px;
+
+        @media(max-width: $breakpoint1280) {
+            padding: 60px 48px 150px 48px;
+            background-image: url(../assets/img/photo/call-master-bg.png);
+            background-repeat: no-repeat;
+            background-position: 50% 100%;
+        }
+        @media(max-width: $breakpoint768) {
+            background-size: contain;
+        }
+        @media(max-width: $breakpoint480) {
+            flex-direction: column;
+            padding: 28px 20px 0 20px;
+            background-image: none;
+            gap: 14px;
+        }
     }
     &__left {
-        // max-width: 780px;
         width: 55%;
 
         padding: 60px 0 60px 120px;
+
+        @media(max-width: $breakpoint1280) {
+            width: 100%;
+            padding: 0;
+        }
     }
     &__right {
         width: 35%;
         margin: auto 60px 0 0;
+
+        @media(max-width: $breakpoint1280) {
+            display: none;
+        }
+        @media(max-width: $breakpoint480) {
+            display: flex;
+            justify-content: center;
+
+            max-height: 210px;
+            width: auto;
+            margin: 0;
+        }
     }
     &__text {
         margin: 44px 0 28px 0;
         font-weight: 600;
         font-size: 20px;
         color: $dark-gray;
+
+        @media(max-width: $breakpoint480) {
+            font-size: 16px;
+            margin: 12px 0 16px 0;
+        }
     }
     &__btn {
         padding: 14px 28px;
         background: $red;
         font-size: 16px;
+
+        @media(max-width: $breakpoint480) {
+            padding: 12px 20px; 
+        }
+
+        &:hover {
+            background-color: #be1a26;
+        }
     }
 }

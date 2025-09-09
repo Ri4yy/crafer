@@ -4,13 +4,35 @@
         display: flex;
         flex-direction: column;
         gap: 48px;
+
+        @media(max-width: $breakpoint768) {
+            gap: 26px;
+        }
+        @media(max-width: $breakpoint480) {
+            gap: 20px;
+        }
+    }
+    &__pagination {
+        margin-top: 20px;
     }
 
-    &__date {
-        margin-bottom: 24px;
-        font-weight: 500;
-        font-size: 32px;
-        color: $dark-gray;
+    &-container {
+        @media(max-width: $breakpoint768) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &-top {
+        @media(max-width: $breakpoint768) {
+            display: contents;
+        }
+        & .btn {
+            @media(max-width: $breakpoint768) {
+                margin-top: 20px;
+                order: 3;
+                width: fit-content;
+            }
+        }
     }
 
     &__wrapper {
@@ -18,60 +40,71 @@
         grid-template-columns: repeat(12, 1fr);
         column-gap: 20px;
         row-gap: 44px;
+
+        @media(max-width: $breakpoint1280) {
+            row-gap: 32px;
+        }
+        @media(max-width: $breakpoint1024) {
+            row-gap: 20px;
+            column-gap: 16px;
+        }
+        @media(max-width: $breakpoint480) {
+            column-gap: 4px;
+            row-gap: 10px;
+        }
     }
 
     &__item {
-        &:nth-child(1) {
+        &:nth-child(6n+1) {
             grid-column: span 4;
-            grid-row: 1;
-
-            & .works__gallery {
-                aspect-ratio: 466 / 290;
+            grid-row: auto;
+            .works__gallery { aspect-ratio: 466 / 290; }
+            @media(max-width: $breakpoint768) {
+                grid-column: span 7;
             }
         }
-
-        &:nth-child(2) {
+        &:nth-child(6n+2) {
             grid-column: span 5;
-            grid-row: 1;
-
-            & .works__gallery {
-                aspect-ratio: 588 / 290;
+            grid-row: auto;
+            .works__gallery { aspect-ratio: 588 / 290; }
+            @media(max-width: $breakpoint768) {
+                grid-column: span 5;
+                grid-row: auto;
             }
         }
-
-        &:nth-child(3) {
+        &:nth-child(6n+3) {
             grid-column: span 3;
-            grid-row: 1;
-
-            & .works__gallery {
-                aspect-ratio: 345 / 290;
+            grid-row: auto;
+            .works__gallery { aspect-ratio: 345 / 290; }
+            @media(max-width: $breakpoint768) {
+                grid-column: span 6;
             }
         }
-
-        &:nth-child(4) {
+        &:nth-child(6n+4) {
             grid-column: span 5;
-            grid-row: 2;
-
-            & .works__gallery {
-                aspect-ratio: 588 / 290;
+            grid-row: auto;
+            .works__gallery { aspect-ratio: 588 / 290; }
+            @media(max-width: $breakpoint768) {
+                grid-column: span 6;
+                grid-row: auto;
             }
         }
-
-        &:nth-child(5) {
+        &:nth-child(6n+5) {
             grid-column: span 3;
-            grid-row: 2;
-
-            & .works__gallery {
-                aspect-ratio: 345 / 290;
+            grid-row: auto;
+            .works__gallery { aspect-ratio: 345 / 290; }
+            @media(max-width: $breakpoint768) {
+                grid-column: span 5;
+                grid-row: auto;
             }
         }
-
-        &:nth-child(6) {
+        &:nth-child(6n) {
             grid-column: span 4;
-            grid-row: 2;
-
-            & .works__gallery {
-                aspect-ratio: 466 / 290;
+            grid-row: auto;
+            .works__gallery { aspect-ratio: 466 / 290; }
+            @media(max-width: $breakpoint768) {
+                grid-column: span 7;
+                grid-row: auto;
             }
         }
 
@@ -86,8 +119,17 @@
         border-radius: 16px;
         overflow: hidden;
 
-        // height: 100%;
-        // max-height: 290px;
+        @media(max-width: $breakpoint1024) {
+            border-radius: 12px;
+        }
+        
+        @media(max-width: $breakpoint768) {
+            height: 230px;
+            aspect-ratio: unset !important;
+        }
+        @media(max-width: $breakpoint480) {
+            height: 130px;
+        }
 
         & .hover-slider-indicator {
             position: absolute;
@@ -99,12 +141,28 @@
             display: flex;
             gap: 10px;
 
+            @media(max-width: $breakpoint1024) {
+                bottom: 10px;
+            }
+            @media(max-width: $breakpoint480) {
+                gap: 4px;
+            }
+
             & .hover-slider-indicator-dot {
                 border-radius: 50%;
                 background: #fff;
                 width: 12px;
                 height: 12px;
                 transition: all .3s;
+
+                @media(max-width: $breakpoint1024) {
+                    width: 10px;
+                    height: 10px;
+                }
+                @media(max-width: $breakpoint480) {
+                    width: 6px;
+                    height: 6px;
+                }
 
                 &.active {
                     background: $red;
@@ -119,7 +177,57 @@
         object-fit: cover;
     }
 
-    &__content {}
+    &__content {
+
+        &-inner {
+            margin-bottom: 24px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            row-gap: 10px;
+            column-gap: 20px;
+
+            @media(max-width: $breakpoint480) {
+                margin-bottom: 12px;
+            }
+
+            &-title {
+                font-weight: 500;
+                font-size: 32px;
+                color: $dark-gray;
+
+                @media(max-width: $breakpoint480) {
+                    font-size: 20px;
+                }
+            }
+
+            &-more {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+
+                font-weight: 600;
+                font-size: 20px;
+                text-align: center;
+                color: $red;
+
+                @media(max-width: $breakpoint480) {
+                    font-size: 16px;
+                    gap: 10px;
+                }
+
+                & svg {
+                    fill: $red;
+
+                    @media(max-width: $breakpoint480) {
+                        width: 14px;
+                    }
+                }
+            }
+        }
+    }
 
     &__title {
         margin-top: 20px;
@@ -128,5 +236,18 @@
         color: $dark-gray;
         text-align: center;
         transition: color .3s;
+
+        @media(max-width: $breakpoint1280) {
+            margin-top: 14px;
+            font-size: 18px;
+        }
+        @media(max-width: $breakpoint1024) {
+            margin-top: 8px;
+            font-size: 16px;
+        }
+        @media(max-width: $breakpoint480) {
+            margin-top: 2px;
+            font-size: 12px;
+        }
     }
 }

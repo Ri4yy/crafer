@@ -10,10 +10,21 @@
         width: 120px;
         height: 62px;
         border-radius: 0 5px 0 5px;
-        background: #f1f1f1;
+        background: #f6f6f6;
         
         display: flex;
         align-items: end;
+
+        @media(max-width: $breakpoint1024) {
+            background: rgba(221, 221, 221, 1);
+        }
+        @media(max-width: $breakpoint600) {
+            background: #f6f6f6;
+        }
+        @media(max-width: $breakpoint480) {
+            width: 96px;
+            height: 48px;
+        }
     }
 
     &__btns {

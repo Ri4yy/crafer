@@ -3,12 +3,27 @@
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         gap: 20px;
+
+        @media(max-width: $breakpoint1024) {
+            grid-template-columns: 1fr;
+        }
+        @media(max-width: $breakpoint480) {
+            gap: 12px;
+        }
     }
     &__map {
         grid-column: span 7;
         border-radius: 20px;
         overflow: hidden;
         box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+
+        @media(max-width: $breakpoint1024) {
+            grid-column: unset;
+            height: 410px;
+        }
+        @media(max-width: $breakpoint480) {
+            height: 200px;
+        }
 
         & iframe {
             width: 100%;
@@ -22,29 +37,53 @@
         padding: 44px;
         box-shadow: 0 0 9px 0 rgba(92, 63, 36, 0.25);
         background: $dark-gray;
+
+        @media(max-width: $breakpoint1024) {
+            grid-column: unset;
+        }
+        @media(max-width: $breakpoint480) {
+            border-radius: 12px;
+            padding: 26px;
+        }
     }
 
     &__list {
         display: flex;
         flex-direction: column;
         gap: 32px;
+
+        @media(max-width: $breakpoint480) {
+            gap: 18px;
+        }
     }
     &__item-inner {
         display: flex;
         flex-direction: column;
         gap: 10px;
+
+        @media(max-width: $breakpoint480) {
+            gap: 6px;
+        }
     }
     &__title {
         font-weight: 700;
         font-size: 24px;
         line-height: 133%;
         color: #fff;
+
+        @media(max-width: $breakpoint480) {
+            font-size: 16px;
+        }
     }
     &__value {
         font-weight: 500;
         font-size: 20px;
         line-height: 120%;
         color: #fff;
+
+        @media(max-width: $breakpoint480) {
+            font-size: 14px;
+        }
 
         & a {
             color: #fff;

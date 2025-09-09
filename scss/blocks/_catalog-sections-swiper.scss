@@ -1,0 +1,18 @@
+.catalog-sections-swiper {
+    padding: 12px !important;
+    margin: -12px !important;
+
+    &__slide {
+        height: auto !important;
+    }
+
+    & .catalog-swiper-card {
+        &[data-status="active"] {
+            border: 1px solid $red;
+
+            &:hover {
+                border: 1px solid #f1a5aa;
+            }
+        }
+    }
+} 

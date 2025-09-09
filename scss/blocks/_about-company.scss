@@ -3,13 +3,79 @@
 
     &__wrapper {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        // gap: 50px;
+
         border-radius: 20px;
         background: rgba(205, 205, 205, 0.3);
         box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
 
-        padding: 76px 70px 0;
+        padding: 60px 42px;
+
+        @media(max-width: $breakpoint768) {
+            padding: 32px;
+        }
+        @media(max-width: $breakpoint480) {
+            padding: 54px 20px 28px 20px;
+        }
+
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+
+            @media(max-width: $breakpoint1024) {
+                flex-direction: column;
+            }
+            @media(max-width: $breakpoint480) {
+                gap: 32px;
+            }
+
+            & .about-company__description {
+                max-width: 700px;
+
+                @media(max-width: $breakpoint1024) {
+                    max-width: 100%;
+                }
+            }
+        }
+        &-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            
+            @media(max-width: $breakpoint1024) {
+                flex-direction: column-reverse;
+            }
+            @media(max-width: $breakpoint480) {
+                margin-top: 32px;
+                gap: 32px;
+            }
+
+            & .about-company__description {
+                max-width: 750px;
+
+                @media(max-width: $breakpoint1024) {
+                    max-width: 100%;
+                }
+            }
+            & .about-company__img {
+                max-width: 480px;
+                aspect-ratio: 480 / 390;
+                border-radius: 20px;
+                overflow: hidden;
+            }
+
+            &-wrapper {
+                display: block;
+
+                overflow: hidden;
+                max-height: 0;
+                transition: max-height 0.5s ease, padding 0.5s ease, margin-top 0.5s ease;    
+            }
+        }
     }
     &__top {
         position: absolute;
@@ -23,16 +89,32 @@
             left: -10px;
             width: 355px;
             height: 72px;
-            background: #F1F1F1;
+            background: #f6f6f6;
             border-bottom-right-radius: 20px;
+
+            @media(max-width: $breakpoint768) {
+                width: 255px;
+                height: 52px;
+            }
+            @media(max-width: $breakpoint480) {
+                width: 220px;
+            }
         }
 
         &-inner {
             position: relative;
             width: 345px;
             height: 62px;
+
+            @media(max-width: $breakpoint768) {
+                width: 255px;
+                height: 42px;
+            }
+            @media(max-width: $breakpoint480) {
+                width: 220px;
+            }
     
-            background: #F1F1F1;
+            background: #f6f6f6;
             border-bottom-right-radius: 20px;
 
             &::before,
@@ -43,7 +125,7 @@
                 height: 40px;
                 background: transparent;
                 border-radius: 50%;
-                box-shadow: -15px -15px 20px 0 #F1F1F1;
+                box-shadow: -15px -15px 20px 0 #f6f6f6;
             }
             &::before {
                 top: 0;
@@ -55,20 +137,39 @@
             }
         }
     }
-    &__left {
-        
-    }
-    &__right {
-        max-width: 528px;
+    &__img {
+        flex-shrink: 0;
+
+        @media(max-width: $breakpoint1280) {
+            max-width: 400px;
+        }
+        @media(max-width: $breakpoint1024) {
+            max-width: 100%;
+        }
     }
     &__text {
         font-weight: 500;
         font-size: 20px;
         color: $dark-gray;
 
+        @media(max-width: $breakpoint480) {
+            font-size: 16px;
+        }
+
         & span {
             font-weight: 700;
             color: $red;
+        }
+    }
+
+    &__btn {
+
+        &-wrapper {
+            margin-top: 26px;
+
+            @media(max-width: $breakpoint768) {
+                margin-top: 20px;
+            }
         }
     }
 }

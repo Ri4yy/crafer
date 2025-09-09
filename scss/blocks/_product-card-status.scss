@@ -8,6 +8,13 @@
     text-decoration: underline !important;
     color: #979797;
 
+    @media(max-width: $breakpoint1024) {
+        font-size: 14px;
+    }
+    @media(max-width: $breakpoint600) {
+        font-size: 12px;
+    }
+
     &::before {
         content: '';
         width: 8px;

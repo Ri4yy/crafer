@@ -160,36 +160,70 @@
             </div>
         </section>
 
-        <section class="section section--title-page">
+        <!-- <section class="section section--title-page">
             <div class="container">
                 <h1>Акции</h1>
             </div>
-        </section>
+        </section> -->
 
         <!-- Разделы -->
         <section class="section">
             <div class="container">
                 <div class="catalog-sections">
-                    <div class="catalog-sections__wrapper">
-                        <div class="catalog-sections__item">
-                            <a href="" class="catalog-swiper-card" data-status="active">
-                                <div class="catalog-swiper-card__img">
-                                    <img src="/assets/img/other/c-item_1.png" alt="catalog">
-                                </div>
-                                <div class="catalog-swiper-card__content">
-                                    <h3 class="catalog-swiper-card__title">Печи и камины</h3>
-                                </div>
-                            </a>
+                    <div class="catalog-sections__top">
+                        <h2>Акции</h2>
+                        <div class="swiper-template__btns">
+                            <div class="swiper__btn catalog-swiper__btn catalog-swiper__btn--prev">
+                                <svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.9209 22.5343C14.7187 21.751 14.7194 20.4658 13.9225 19.6816L7.16547 13.033C6.36911 12.2494 6.36912 10.9653 7.16547 10.1818L13.9225 3.53313C14.7194 2.74895 14.7187 1.46372 13.9209 0.680407L13.8013 0.562961C13.0233 -0.200869 11.7769 -0.200869 10.9989 0.56296L1.20355 10.1802C0.405128 10.9641 0.40513 12.2506 1.20356 13.0345L10.9989 22.6518C11.7769 23.4156 13.0233 23.4156 13.8013 22.6518L13.9209 22.5343Z" fill="#E3DFDC" />
+                                </svg>
+                            </div>
+                            <div class="swiper__btn catalog-swiper__btn catalog-swiper__btn--next">
+                                <svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.827141 0.680653C0.0293236 1.46396 0.0286226 2.7492 0.825584 3.53338L7.58258 10.182C8.37893 10.9656 8.37893 12.2496 7.58258 13.0332L0.825584 19.6818C0.0286226 20.466 0.0293236 21.7512 0.82714 22.5346L0.946761 22.652C1.72474 23.4158 2.97115 23.4158 3.74912 22.652L13.5445 13.0347C14.3429 12.2508 14.3429 10.9644 13.5445 10.1805L3.74912 0.563204C2.97115 -0.200624 1.72474 -0.200623 0.946762 0.563206L0.827141 0.680653Z" fill="white" />
+                                </svg>
+                            </div>
                         </div>
-                        <div class="catalog-sections__item">
-                            <a href="" class="catalog-swiper-card" data-status="">
-                                <div class="catalog-swiper-card__img">
-                                    <img src="/assets/img/other/c-item_1.png" alt="catalog">
+                    </div>
+                    <div class="container__inner">
+                        <div class="swiper catalog-sections-swiper swiper-template">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide catalog-sections-swiper__slide">
+                                    <a href="" class="catalog-swiper-card" data-status="active" style="--preview: url('/assets/img/other/sect-1.png');">
+                                        <div class="catalog-swiper-card__content">
+                                            <h3 class="catalog-swiper-card__title">Печи и камины</h3>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="catalog-swiper-card__content">
-                                    <h3 class="catalog-swiper-card__title">Дымоходы и вентиляция</h3>
+                                <div class="swiper-slide catalog-sections-swiper__slide">
+                                    <a href="" class="catalog-swiper-card" style="--preview: url('/assets/img/other/sect-2.png');">
+                                        <div class="catalog-swiper-card__content">
+                                            <h3 class="catalog-swiper-card__title">Дымоходы и вентиляция</h3>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
+                                <div class="swiper-slide catalog-sections-swiper__slide">
+                                    <a href="" class="catalog-swiper-card" style="--preview: url('/assets/img/other/sect-3.png');">
+                                        <div class="catalog-swiper-card__content">
+                                            <h3 class="catalog-swiper-card__title">Крепёж и аксессуары</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide catalog-sections-swiper__slide">
+                                    <a href="" class="catalog-swiper-card" style="--preview: url('/assets/img/other/sect-4.png');">
+                                        <div class="catalog-swiper-card__content">
+                                            <h3 class="catalog-swiper-card__title">Банные товары</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide catalog-sections-swiper__slide">
+                                    <a href="" class="catalog-swiper-card" style="--preview: url('/assets/img/other/sect-4.png');">
+                                        <div class="catalog-swiper-card__content">
+                                            <h3 class="catalog-swiper-card__title">Дымоходы</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -214,10 +248,35 @@
                                     </div>
                                     <h3 class="product-card__title">Банная печь Казанская</h3>
                                     <span class="product-card__subtitle">без выноса</span>
-                                    <div class="product-card__price">26 000 ₽</div>
+                                    <div class="product-card__price">
+                                        <span class="product-card__price-new">22 000 ₽</span>
+                                        <span class="product-card__price-old">26 000 ₽</span>
+                                    </div>
                                     <div class="product-card__btns">
                                         <a href="" class="product-card__link">Подробнее</a>
-                                        <button class="product-card__btn">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo__item">
+                            <div class="product-card">
+                                <a href="" class="product-card__gallery">
+                                    <img src="/assets/img/other/new-1.png"
+                                    data-hover-slides="/assets/img/other/new-2.png, /assets/img/other/new-1.png"
+                                        class="product-card__img" alt="">
+                                </a>
+                                <div class="product-card__content">
+                                    <div class="product-card-status" aria-stock="yes">
+                                        <span>В наличии</span>
+                                    </div>
+                                    <h3 class="product-card__title">Банная печь Казанская</h3>
+                                    <span class="product-card__subtitle">без выноса</span>
+                                    <div class="product-card__price">
+                                        <span class="product-card__price-new">22 000 ₽</span>
+                                        <span class="product-card__price-old">26 000 ₽</span>
+                                    </div>
+                                    <div class="product-card__btns">
+                                        <a href="" class="product-card__link">Подробнее</a>
                                     </div>
                                 </div>
                             </div>
@@ -256,39 +315,21 @@
             </div>
         </section>
 
-        <!-- Форма -->
+        <!-- Вызов мастера -->
         <section class="section">
             <div class="container">
-                <div class="form-block">
-                    <div class="form-block__wrapper">
-                        <div class="form-block__left">
-                            <div class="form-block__top">
-                                <h2>Оставьте заявку</h2>
-                                <span class="form-block__subtitle">Мы обязательно свяжемся с Вами!</span>
-                            </div>
-                            <div class="form-block__bottom">
-                                <form action="" class="form">
-                                    <div class="form__content">
-                                        <div class="form__item">
-                                            <input type="text" placeholder="Имя" class="form__input">
-                                        </div>
-                                        <div class="form__item">
-                                            <input type="text" placeholder="Телефон" class="form__input">
-                                        </div>
-                                        <div class="form__item">
-                                            <textarea name="" placeholder="Ваш вопрос" class="form__textarea"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="form__bottom">
-                                        <button type="submit" class="btn form__btn">Отправить</button>
-                                        <span class="form__label">Нажимая кнопку “Оставить заявку” я даю согласие 
-                                            на отправку и обработку своих <a href="">персональных данных</a></span>
-                                    </div>
-                                </form>
-                            </div>
+                <div class="call-master">
+                    <div class="call-master__wrapper">
+                        <div class="call-master__left">
+                            <h2 class="call-master__title">Бесплатный вызов замерщика</h2>
+                            <p class="call-master__text">
+                                Новые дымоходы и печи будут установлены правильно и прослужат долго только при точно снятых замерах. В нашей компании предусмотрена услуга вызова на дом замерщика.
+                                Сразу после выполнения замеров и уточнения других параметров, вы сможете узнать точную стоимость будущей конструкции.
+                            </p>
+                            <button class="btn call-master__btn">Вызвать на замер</button>
                         </div>
-                        <div class="form-block__right">
-                            <img src="/assets/img/icons/form-logo.svg" alt="logo">
+                        <div class="call-master__right">
+                            <img src="/assets/img/icons/call-master.svg" alt="">
                         </div>
                     </div>
                 </div>

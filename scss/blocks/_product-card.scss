@@ -11,6 +11,10 @@
         overflow: hidden;
         aspect-ratio: 345 / 255;
 
+        @media(max-width: $breakpoint1024) {
+            max-height: 215px;
+        }
+
         & .hover-slider-indicator {
             position: absolute;
             bottom: 15px;
@@ -21,12 +25,22 @@
             display: flex;
             gap: 10px;
 
+            @media(max-width: $breakpoint768) {
+                gap: 4px;
+                bottom: 10px;
+            }
+
             & .hover-slider-indicator-dot {
                 border-radius: 50%;
                 background: #fff;
                 width: 12px;
                 height: 12px;
                 transition: all .3s;
+
+                @media(max-width: $breakpoint768) {
+                    width: 8px;
+                    height: 8px;
+                }
 
                 &.active {
                     background: $red;
@@ -45,6 +59,10 @@
         display: flex;
         flex-direction: column;
         flex-grow: 1;
+
+        @media(max-width: $breakpoint1024) {
+            margin-top: 12px;
+        }
     }
     &__title {
         margin-top: 10px;
@@ -52,20 +70,91 @@
         font-weight: 700;
         font-size: 24px;
         color: $dark-gray;
+
+        @media(max-width: $breakpoint1024) {
+            margin-top: 8px;
+            font-size: 19px;
+        }
+        @media(max-width: $breakpoint768) {
+            font-size: 18px;
+        }
+        @media(max-width: $breakpoint480) {
+            font-size: 17px;
+        }
     }
     &__subtitle {
         margin-top: 6px;
         font-weight: 500;
         font-size: 20px;
         color: $dark-gray;
+
+        @media(max-width: $breakpoint1024) {
+            margin-top: 2px;
+            font-size: 16px;
+        }
+        @media(max-width: $breakpoint768) {
+            font-size: 15px;
+        }
     }
     &__price {
         margin-top: 16px;
         margin-bottom: 26px;
 
-        font-weight: 700;
-        font-size: 32px;
-        color: $dark-gray;
+        @media(max-width: $breakpoint1024) {
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+        @media(max-width: $breakpoint600) {
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        &-main {
+            font-weight: 700;
+            font-size: 32px;
+            color: $dark-gray;
+
+            @media(max-width: $breakpoint1024) {
+                font-size: 24px;
+            }
+            @media(max-width: $breakpoint600) {
+                font-size: 22px;
+            }
+            @media(max-width: 400px) {
+                font-size: 20px;
+            }
+        }
+        &-new {
+            font-weight: 700;
+            font-size: 32px;
+            color: $red;
+
+            @media(max-width: $breakpoint1024) {
+                font-size: 24px;
+            }
+            @media(max-width: $breakpoint600) {
+                font-size: 22px;
+            }
+            @media(max-width: 400px) {
+                font-size: 20px;
+            }
+        }
+        &-old {
+            font-size: 20px;
+            text-decoration: line-through;
+            color: $dark-gray;
+            font-weight: 700;
+
+            @media(max-width: $breakpoint1024) {
+                font-size: 16px;
+            }
+            @media(max-width: $breakpoint600) {
+                font-size: 15px;
+            }
+            @media(max-width: 400px) {
+                font-size: 14px;
+            }
+        }
     }
 
     &__btns {
@@ -79,17 +168,23 @@
         font-weight: 600;
         font-size: 20px;
         text-decoration: underline !important;
-        color: #979797;
-    }
-    &__btn {
+        color: $dark-gray;
+        text-align: center;
+
+        background: #d9d9d9;
         border-radius: 30px;
         padding: 10px;
-        background: $dark-gray;
         width: 100%;
 
-        font-weight: 600;
-        font-size: 20px;
-        text-align: center;
-        color: #fff;
+        transition: all 0.3s ease-in-out;
+
+        @media(max-width: $breakpoint1024) {
+            font-size: 14px;
+            padding: 7px;
+        }
+
+        &:hover {
+            background: #bebcbc;
+        }
     }
 }

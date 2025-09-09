@@ -1,23 +1,59 @@
 const catalogSwiper = new Swiper('.catalog-swiper', {
     // Optional parameters
-    spaceBetween: 20,
     enabled: true,
 
     breakpoints: {
-        320: {
+        0: {
             allowTouchMove: true,
-            slidesPerView: 1
+            spaceBetween: 10,
+            slidesPerView: 2,
         },
-        480: {
+        376: {
             allowTouchMove: true,
-            slidesPerView: 2
+            spaceBetween: 10,
+            slidesPerView: 2,
+            grid: {
+                rows: 2,
+                fill: 'row',
+            }
         },
-        1024: {
+        601: {
             allowTouchMove: true,
+            spaceBetween: 20,
             slidesPerView: 3
         },
         1280: {
             allowTouchMove: true,
+            spaceBetween: 20,
+            slidesPerView: 4
+        },
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.catalog-swiper__btn--next',
+      prevEl: '.catalog-swiper__btn--prev',
+    },
+});
+
+const catalogSectionsSwiper = new Swiper('.catalog-sections-swiper', {
+    // Optional parameters
+    enabled: true,
+
+    breakpoints: {
+        0: {
+            allowTouchMove: true,
+            spaceBetween: 10,
+            slidesPerView: 2,
+        },
+        601: {
+            allowTouchMove: true,
+            spaceBetween: 14,
+            slidesPerView: 3
+        },
+        1280: {
+            allowTouchMove: true,
+            spaceBetween: 20,
             slidesPerView: 4
         },
     },
@@ -30,24 +66,36 @@ const catalogSwiper = new Swiper('.catalog-swiper', {
 });
 const newProductsSwiper = new Swiper('.new-products-swiper', {
     // Optional parameters
-    spaceBetween: 20,
     enabled: true,
 
     breakpoints: {
-        320: {
+        0: {
             allowTouchMove: true,
+            spaceBetween: 6,
             slidesPerView: 1
         },
-        480: {
+        366: {
             allowTouchMove: true,
+            spaceBetween: 6,
             slidesPerView: 2
         },
-        1024: {
+        420: {
             allowTouchMove: true,
+            spaceBetween: 16,
+            slidesPerView: 2,
+            grid: {
+                rows: 2,
+                fill: 'row',
+            }
+        },
+        768: {
+            allowTouchMove: true,
+            spaceBetween: 20,
             slidesPerView: 3
         },
         1280: {
             allowTouchMove: true,
+            spaceBetween: 20,
             slidesPerView: 4
         },
     },
@@ -60,24 +108,27 @@ const newProductsSwiper = new Swiper('.new-products-swiper', {
 });
 const similarProductsSwiper = new Swiper('.similar-products-swiper', {
     // Optional parameters
-    spaceBetween: 20,
     enabled: true,
 
     breakpoints: {
         320: {
             allowTouchMove: true,
+            spaceBetween: 6,
             slidesPerView: 1
         },
-        480: {
+        420: {
             allowTouchMove: true,
-            slidesPerView: 2
+            spaceBetween: 16,
+            slidesPerView: 2,
         },
-        1024: {
+        768: {
             allowTouchMove: true,
+            spaceBetween: 20,
             slidesPerView: 3
         },
         1280: {
             allowTouchMove: true,
+            spaceBetween: 20,
             slidesPerView: 4
         },
     },
@@ -102,19 +153,76 @@ const heroSwiper = new Swiper('.hero-swiper', {
     }
 });
 
+const swiperCertificate = new Swiper('.swiper-certificate', {
+    // Optional parameters
+    enabled: true,
 
-  var swiper2 = new Swiper(".swiper-detail-product-small", {
-    spaceBetween: 20,
-    slidesPerView: 6,
-    freeMode: true,
-    watchSlidesProgress: true,
-  });
-  var swiper = new Swiper(".swiper-detail-product", {
+    breakpoints: {
+        0: {
+            allowTouchMove: true,
+            spaceBetween: 6,
+            slidesPerView: 1,
+        },
+        380: {
+            allowTouchMove: true,
+            spaceBetween: 8,
+            slidesPerView: 2,
+        },
+        600: {
+            allowTouchMove: true,
+            spaceBetween: 12,
+            slidesPerView: 3,
+        },
+        769: {
+            allowTouchMove: true,
+            spaceBetween: 16,
+            slidesPerView: 3,
+        },
+        1024: {
+            allowTouchMove: true,
+            spaceBetween: 20,
+            slidesPerView: 4,
+        },
+    },
+  
+    // Navigation arrows
     navigation: {
-      nextEl: ".swiper-detail-product__btn--next",
-      prevEl: ".swiper-detail-product__btn--prev",
+      nextEl: '.swiper-certificate-btn--next',
+      prevEl: '.swiper-certificate-btn--prev',
     },
-    thumbs: {
-      swiper: swiper2,
+});
+
+
+var swiper2 = new Swiper(".swiper-detail-product-small", {
+freeMode: true,
+watchSlidesProgress: true,
+
+
+breakpoints: {
+    0: {
+        allowTouchMove: true,
+        spaceBetween: 6,
+        slidesPerView: 4
     },
-  });
+    420: {
+        allowTouchMove: true,
+        spaceBetween: 16,
+        slidesPerView: 4,
+    },
+    600: {
+        allowTouchMove: true,
+        spaceBetween: 20,
+        slidesPerView: 6
+    },
+}
+});
+var swiper = new Swiper(".swiper-detail-product", {
+navigation: {
+    nextEl: ".swiper-detail-product__btn--next",
+    prevEl: ".swiper-detail-product__btn--prev",
+},
+thumbs: {
+    swiper: swiper2,
+},
+});
+

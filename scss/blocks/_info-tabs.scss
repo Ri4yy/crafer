@@ -1,7 +1,26 @@
 .info-tabs {
+    &__top {
+        overflow-x: overlay;
+
+        padding: 12px;
+        margin: -12px;
+    }
+
     &__list {
         display: flex;
         gap: 20px;
+
+        min-width: 830px;
+
+        @media(max-width: $breakpoint992) {
+            gap: 16px;
+        }
+        @media(max-width: $breakpoint768) {
+            gap: 8px;
+        }
+        @media(max-width: $breakpoint480) {
+            min-width: 675px;
+        }
 
         & li {
             flex: 1 1 0;
@@ -16,6 +35,24 @@
             color: $dark-gray;
             text-align: center;
             cursor: pointer;
+
+            @media(max-width: $breakpoint1180) {
+                padding: 18px 14px;
+                font-size: 18px;
+            }
+            @media(max-width: $breakpoint992) {
+                font-size: 16px;
+            }
+            @media(max-width: $breakpoint768) {
+                padding: 12px 24px;
+                font-size: 20px;
+
+                flex: unset;
+            }
+            @media(max-width: $breakpoint480) {
+                padding: 10px 20px;
+                font-size: 16px;
+            }
 
             &.active-tab {
                 color: $red;

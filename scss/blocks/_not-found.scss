@@ -1,0 +1,69 @@
+.not-found {
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 32px;
+        color: #323232;
+        text-align: center;
+
+        @media(max-width: $breakpoint600) {
+            font-size: 28px;
+        }
+        @media(max-width: $breakpoint375) {
+            font-size: 24px;
+        }
+    }
+    &__text {
+        font-weight: 600;
+        font-size: 20px;
+        color: #323232;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 18px;
+        }
+        @media(max-width: $breakpoint600) {
+            text-align: center;
+        }
+        @media(max-width: $breakpoint375) {
+            font-size: 16px;
+        }
+    }
+
+    &__img {
+        @media(max-width: $breakpoint1024) {
+            max-width: 770px;
+        }
+        @media(max-width: $breakpoint768) {
+            max-width: 500px;
+        }
+        @media(max-width: $breakpoint480) {
+            max-width: 300px;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+        max-width: 765px;
+
+        @media(max-width: $breakpoint600) {
+            flex-direction: column;
+        }
+    }
+    &__btn {
+        background: #404040;
+        padding: 15px 60px;
+        flex-shrink: 0;
+
+        @media(max-width: $breakpoint480) {
+            padding: 12px 30px;
+        }
+    }
+}

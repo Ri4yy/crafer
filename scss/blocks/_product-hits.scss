@@ -1,11 +1,15 @@
 .product-hits {
     margin-top: 32px;
+    margin-bottom: 32px;
 
     display: flex;
     flex-direction: column;
 
     @media(max-width: $breakpoint992) {
         margin-top: 0;
+    } 
+    @media(max-width: $breakpoint600) {
+        margin-bottom: 18px;
     } 
 
     &__item {
@@ -20,12 +24,19 @@
             background: rgba(154, 154, 152, 0.22);
         }
 
+        @media(max-width: $breakpoint480) {
+            padding: 6px 8px;
+        }
+
         &-text {
             font-weight: 500;
             font-size: 20px;
             line-height: 130%;
             color: $dark-gray;
 
+            @media(max-width: $breakpoint1180) {
+                font-size: 18px;
+            }
             @media(max-width: $breakpoint600) {
                 font-size: 16px;
             }
@@ -37,8 +48,84 @@
             text-align: right;
             color: $dark-gray;
 
+            @media(max-width: $breakpoint1180) {
+                font-size: 18px;
+            }
             @media(max-width: $breakpoint600) {
                 font-size: 16px;
+            }
+        }
+        &-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        &-hit {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid rgba(209, 33, 46, 0.4);
+            transition: border .3s;
+            flex-shrink: 0;
+
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 130%;
+            text-align: center;
+            color: #d1212e;
+            cursor: pointer;
+
+            @media(max-width: $breakpoint480) {
+                width: 18px;
+                height: 18px;
+            }
+
+            &:hover {
+                border: 1px solid rgba(209, 33, 46, .6);
+                & + .product-hits__item-hit-text {
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+            }
+
+            &-wrapper {
+                position: relative;
+                display: flex;
+            }
+            &-text {
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity .3s;
+
+                position: absolute;
+                bottom: 20px;
+                left: 22px;
+                z-index: 2;
+
+                padding: 13px 17px;
+                border-radius: 10px;
+                box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+                background: rgba(217, 217, 217, 1);
+                width: 230px;
+
+                @media(max-width: $breakpoint480) {
+                    width: 200px;
+                    padding: 8px 15px;
+                }
+                @media(max-width: $breakpoint375) {
+                    width: 175px;
+                }
+
+                & span {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 130%;
+                    color: #323232;
+
+                    @media(max-width: $breakpoint480) {
+                        font-size: 12px;
+                    }
+                }
             }
         }
     }

@@ -2,12 +2,38 @@
     position: relative;
     width: 100%;
 
+    &:hover {
+        & .video-preview__play {
+            stroke: $red;
+
+            & path:last-child {
+                fill: $red;
+            }
+        }
+    }
+
     &__play {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         cursor: pointer;
+        stroke: #f1f1f1;
+        transition: stroke 0.3s ease;
+
+        @media(max-width: $breakpoint1024) {
+            width: 120px;
+            height: 120px;
+        }
+        @media(max-width: $breakpoint480) {
+            width: 80px;
+            height: 80px;
+        }
+
+        & path:last-child {
+            fill: #f1f1f1;
+            transition: fill 0.3s ease;
+        }
     }
     &__img {
         width: 100%;

@@ -59,17 +59,17 @@
 
     position: relative;
 
-    width: 14px;
-    height: 10px;
+    width: 24px;
+    height: 14px;
 
-    @media(max-width: $breakpoint768) {
+    @media(max-width: $breakpoint1024) {
         display: flex;
     }
 
     & span {
         position: absolute;
 
-        background: $main-color;
+        background: $dark-gray;
         border-radius: 100px;
         width: 100%;
         height: 2px;
@@ -94,7 +94,7 @@
     }
 
     &--open {
-        height: 16px;
+        height: 20px;
         overflow: hidden;
 
         & span {

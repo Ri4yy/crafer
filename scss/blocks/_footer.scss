@@ -1,6 +1,10 @@
 .footer {
     padding: 40px 0;
 
+    @media(max-width: $breakpoint480) {
+        padding: 32px 0;
+    }
+
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -10,10 +14,16 @@
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         gap: 20px;
+
+        @media(max-width: 700px) {
+            grid-template-columns: 1fr;
+            gap: 14px;
+        }
     }
     &__left {
         grid-column: span 3;
 
+        padding: 12px;
         box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
         background: rgba(205, 205, 205, 0.4);
         border-radius: 16px;
@@ -23,12 +33,32 @@
         align-items: center;
         justify-content: center;
 
+        @media(max-width: $breakpoint1024) {
+            grid-column: span 4;
+        }
+        @media(max-width: 700px) {
+            grid-column: unset;
+        }
+
         &-inner {
             max-width: 220px;
+
+            @media(max-width: 700px) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 28px;
+
+                max-width: 100%;
+            }
         }
     }
     &__social {
         margin-top: 16px;
+
+        @media(max-width: 700px) {
+            margin-top: 0;
+        }
 
         & .social-list svg {
             fill: #979797;
@@ -44,20 +74,49 @@
         border-radius: 16px;
         padding: 30px 70px;
 
+        @media(max-width: $breakpoint1024) {
+            grid-column: span 8;
+            padding: 20px 28px 26px 28px;
+        }
+        @media(max-width: 700px) {
+            grid-column: unset;
+        }
+        @media(max-width: $breakpoint480) {
+            padding: 28px;
+        }
+
         &-wrapper {
             display: flex;
             gap: 18px;
+
+            @media(max-width: $breakpoint1280) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                row-gap: 24px;
+            }
+            @media(max-width: $breakpoint480) {
+                grid-template-columns: 1fr;
+                justify-items: center;
+            }
         }
         &-catalog {
             display: flex;
             flex-direction: column;
             min-width: 230px;
+
+            @media(max-width: $breakpoint480) {
+                align-items: center;
+            }
         }
         &-title {
             font-weight: 600;
             font-size: 20px;
             text-transform: lowercase;
             color: $dark-gray;
+
+            @media(max-width: $breakpoint768) {
+                font-size: 16px;
+            }
         }
 
         &-list {
@@ -65,11 +124,23 @@
             display: flex;
             flex-direction: column;
             gap: 6px;
+
+            @media(max-width: $breakpoint480) {
+                align-items: center;
+            }
         }
         &-link {
             font-weight: 500;
             font-size: 16px;
             color: #818181;
+
+            @media(max-width: $breakpoint768) {
+                font-size: 14px;
+            }
+
+            &:hover {
+                color: $red;
+            }
         }
 
         &-inner {
@@ -77,17 +148,37 @@
 
             display: flex;
             flex-direction: column;
+
+            @media(max-width: $breakpoint1280) {
+                display: contents;
+            }
         }
         &-menu {
             display: flex;
             justify-content: space-between;
             gap: 10px;
 
+            @media(max-width: $breakpoint1280) {
+                flex-direction: column;
+                justify-content: unset;
+                gap: 15px;
+            }
+            @media(max-width: $breakpoint768) {
+                gap: 12px;
+            }
+            @media(max-width: $breakpoint480) {
+                align-items: center;
+            }
+
             &-link {
                 font-weight: 700;
                 font-size: 20px;
                 text-transform: lowercase;
                 color: $dark-gray;
+
+                @media(max-width: $breakpoint768) {
+                    font-size: 16px;
+                }
             }
         }
 
@@ -101,12 +192,37 @@
             align-items: end;
             gap: 6px;
 
+            @media(max-width: $breakpoint1280) {
+                grid-column: 1/-1;
+                grid-row: 1;
+                margin: 0;
+                width: 100%;
+
+                flex-direction: row;
+                align-items: center;
+                gap: 40px;
+            }
+            @media(max-width: $breakpoint768) {
+                justify-content: space-between;
+                gap: 12px;
+            }
+            @media(max-width: $breakpoint480) {
+                grid-column: unset;
+
+                flex-direction: column;
+                gap: 10px;
+            }
+
             &-link {
                 font-weight: 700;
                 font-size: 23px;
                 text-transform: lowercase;
                 color: $dark-gray;
                 text-align: right;
+
+                @media(max-width: $breakpoint768) {
+                    font-size: 20px;
+                }
 
                 &--mail {
                     color: $red;
@@ -123,6 +239,18 @@
         flex-direction: column;
         align-items: center;
 
+        @media(max-width: $breakpoint480) {
+            margin-top: 20px;
+        }
+
+        &-item {
+            @media(max-width: $breakpoint480) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
         &-list {
             display: flex;
         }
@@ -131,8 +259,16 @@
             font-size: 14px;
             color: $dark-gray;
 
+            @media(max-width: $breakpoint480) {
+                font-size: 12px;
+            }
+
             &:not(:last-child) {
                 margin-right: 24px;
+
+                @media(max-width: $breakpoint480) {
+                    margin-right: 0;
+                }
             }
         }
         &-text {
@@ -141,6 +277,46 @@
             font-size: 14px;
             text-align: center;
             color: $dark-gray;
+
+            @media(max-width: $breakpoint480) {
+                font-size: 12px;
+            }
+        }
+
+        &-logo {
+            margin-top: 30px;
+
+            @media(max-width: $breakpoint768) {
+                margin-top: 26px;
+            }
+
+            @media(max-width: $breakpoint480) {
+                margin-top: 20px;
+            }
+
+            & svg {
+                transition: all 0.3s ease-in-out;
+
+                & path:is(:nth-of-type(1), :nth-of-type(2)) {
+                    stroke: #979797;
+                    fill: none;
+                }
+                & path {
+                    fill: #979797;
+                }
+
+                &:hover {
+                    opacity: .8;
+
+                    & path:is(:nth-of-type(1), :nth-of-type(2)) {
+                        stroke: $red;
+                        fill: none;
+                    }
+                    & path {
+                        fill: $red;
+                    }
+                }
+            }
         }
     }
 }

@@ -1,5 +1,25 @@
 .product-detail {
 
+    @media(max-width: $breakpoint768) {
+        margin-top: 24px;
+    }
+
+    &__top {
+
+        &--desktop {
+            @media(max-width: $breakpoint992) {
+                display: none;
+            }
+        }
+
+        &--mobile {
+            display: none;
+
+            @media(max-width: $breakpoint992) {
+                display: block;
+            }
+        }
+    }
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -27,8 +47,8 @@
         
 
         @media(max-width: $breakpoint992) {
-
-            gap: 14px;
+            max-width: 780px;
+            gap: 10px;
             min-width: 0;
         }
         @media(max-width: $breakpoint600) {
@@ -38,22 +58,17 @@
 
             
             @media(max-width: $breakpoint992) {
-                padding: 50px 20px;
-                border: 1px solid rgba(248, 248, 248, 0.52);
-                border-radius: 30px;
-                backdrop-filter: blur(0);
-                background: rgba(248, 248, 248, 0.47);
+                
             }
             @media(max-width: $breakpoint600) {
-                border: none;
-                border-radius: 0;
-                backdrop-filter: none;
-                background: transparent;
-                padding: 0;
+                
             }
         }
     }
     &__info {
+        display: flex;
+        flex-direction: column;
+
         box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
         background: rgba(217, 217, 217, 0.4);
         border-radius: 30px;
@@ -68,11 +83,16 @@
             }
         }
 
+        @media(max-width: $breakpoint1180) {
+            padding: 30px 40px;
+        }
         @media(max-width: $breakpoint992) {
+            padding: 24px;
             width: 100%;
         }
-        @media(max-width: $breakpoint600) {
-            padding: 0;
+        @media(max-width: $breakpoint480) {
+            padding: 22px 10px;
+            border-radius: 15px;
         }
     
         &-name {
@@ -87,31 +107,24 @@
 
             &--desktop {
                 margin-bottom: 14px;
-                
-                @media(max-width: $breakpoint992) {
-                    display: none;
-                }
             } 
             &--mobile {
-                display: none;
-
-                @media(max-width: $breakpoint992) {
-                    display: block;
-                }
-                @media(max-width: $breakpoint600) {
-                    font-size: 24px;
+                @media(max-width: $breakpoint768) {
+                    font-size: 32px;
+                    margin-bottom: 14px;
                 }
                 @media(max-width: $breakpoint480) {
-                    font-size: 20px;
+                    font-size: 27px;
+                    margin-bottom: 8px;
                 }
                 @media(max-width: $breakpoint375) {
-                    font-size: 18px;
+                    font-size: 22px;
                 }
             }
         }
 
         &-bottom {
-            margin-top: 32px;
+            margin-block-start: auto;
 
             display: flex;
             justify-content: space-between;
@@ -120,27 +133,42 @@
             gap: 12px;
 
             @media(max-width: $breakpoint600) {
-                margin-top: 25px;
-                justify-content: center;
                 gap: 16px;
             }
         }
         &-price {
             font-weight: 700;
             font-size: 24px;
-            line-height: 120%;
-            color: $dark-gray;
+            color: $red;
+            line-height: 22px;
 
-            @media(max-width: $breakpoint600) {
+            &-old {
                 font-size: 20px;
+                text-decoration: line-through;
+                color: $dark-gray;
+                font-weight: 700;
+            }
+
+            &-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 6px;
             }
         }
         &-btn { 
             background: $red;
 
-            @media(max-width: $breakpoint600) {
+            @media(max-width: $breakpoint992) {
+                padding: 15px 24px;
+            }
+            @media(max-width: $breakpoint480) {
                 font-size: 16px;
-                padding: 13px 32px;
+                padding: 10px 20px;
+                border-radius: 17px;
+            }
+
+            &:hover {
+                background: #be1a26;
             }
         }
     }

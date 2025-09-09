@@ -18,7 +18,7 @@
                 <nav class="menu">
                     <ul class="menu-nav">
                         <li class="menu-nav__item dropdown-menu dropdown-menu--main">
-                            <a href="" class="menu-nav__link menu-nav__link--active dropdown-menu__toggle">каталог</a>
+                            <a href="./pages/catalog.html" class="menu-nav__link menu-nav__link--active dropdown-menu__toggle">каталог</a>
                             <div class="dropdown-menu__container">
                                 <div class="catalog-menu">
                                     <div class="catalog-menu__wrapper">
@@ -107,9 +107,12 @@
                         <li class="menu-nav__item">
                             <a href="" class="menu-nav__link">услуги</a>
                         </li>
+                        <li class="menu-nav__item">
+                            <a href="" class="menu-nav__link">производство</a>
+                        </li>
                         <li class="menu-nav__item dropdown-menu dropdown-menu--relative">
-                            <a href="" class="menu-nav__link dropdown-menu__toggle">
-                                о компании
+                            <a href="/pages/works.html" class="menu-nav__link dropdown-menu__toggle">
+                                наши работы
                                 <svg width="14" height="9" class="dropdown-menu__toggle-icon" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M7 9.00006L1.20098e-07 1.71521L1.64576 6.10352e-05L7 5.57582L12.3531 6.10352e-05L14 1.714L7 9.00006Z" />
                                 </svg>
@@ -119,10 +122,16 @@
                                     <div class="dropdown__wrapper">
                                         <ul class="dropdown__list">
                                             <li class="dropdown__item">
-                                                <a href="" class="dropdown__link">производство</a>
+                                                <a href="" class="dropdown__link">Газовые дымоходы</a>
                                             </li>
                                             <li class="dropdown__item">
-                                                <a href="" class="dropdown__link">Видеоэкскурсия</a>
+                                                <a href="" class="dropdown__link">Банные дымоходы</a>
+                                            </li>
+                                            <li class="dropdown__item">
+                                                <a href="" class="dropdown__link">Промышленные дымоходы</a>
+                                            </li>
+                                            <li class="dropdown__item">
+                                                <a href="" class="dropdown__link">Гильзование</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -130,10 +139,7 @@
                             </div>
                         </li>
                         <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">наши работы</a>
-                        </li>
-                        <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">КОНТАКТЫ</a>
+                            <a href="/pages/contacts.html" class="menu-nav__link">КОНТАКТЫ</a>
                         </li>
                     </ul>
                 </nav>
@@ -141,12 +147,16 @@
                     <ul class="social-list">
                         <li class="social-list__item">
                             <a href="" class="social-list__link">
-                                <img src="./assets/img/icons/i-wa.svg" alt="vk">
+                                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.9651 0.257618C26.2401 0.257618 33.7584 7.77596 33.7584 17.0509C33.7584 26.3258 26.2401 33.8441 16.9651 33.8441C13.9974 33.8489 11.0819 33.0635 8.51814 31.5686L0.178616 33.8441L2.44906 25.5012C0.952941 22.9367 0.166941 20.0199 0.171898 17.0509C0.171898 7.77596 7.69024 0.257618 16.9651 0.257618ZM11.242 9.15804L10.9061 9.17148C10.6887 9.18472 10.4762 9.24184 10.2814 9.33941C10.0993 9.44257 9.93297 9.57153 9.78771 9.72229C9.58619 9.91206 9.472 10.0766 9.34941 10.2362C8.72826 11.0438 8.39383 12.0352 8.39891 13.0541C8.40227 13.8769 8.61722 14.678 8.95309 15.427C9.63993 16.9417 10.7701 18.5455 12.2614 20.0317C12.6207 20.3894 12.9734 20.7487 13.3529 21.0829C15.2059 22.7143 17.414 23.8908 19.8015 24.5188L20.7554 24.6649C21.0661 24.6817 21.3767 24.6582 21.6891 24.6431C22.1782 24.6178 22.6557 24.4854 23.088 24.2552C23.3079 24.1419 23.5225 24.0186 23.7311 23.8857C23.7311 23.8857 23.8034 23.8387 23.9411 23.7346C24.1678 23.5666 24.3072 23.4474 24.4952 23.2509C24.6346 23.1065 24.7555 22.9369 24.8479 22.7438C24.9789 22.4701 25.1099 21.9478 25.1636 21.5128C25.2039 21.1803 25.1922 20.999 25.1871 20.8864C25.1804 20.7068 25.0309 20.5204 24.8681 20.4414L23.8907 20.0031C23.8907 20.0031 22.4297 19.3667 21.5363 18.9603C21.4428 18.9194 21.3426 18.8961 21.2407 18.8914C21.1258 18.8796 21.0097 18.8925 20.9002 18.9293C20.7907 18.9661 20.6904 19.0259 20.6059 19.1047C20.5975 19.1013 20.485 19.197 19.2709 20.6681C19.2012 20.7618 19.1052 20.8325 18.9951 20.8714C18.8851 20.9103 18.7659 20.9155 18.6529 20.8864C18.5435 20.8571 18.4363 20.8201 18.3321 20.7756C18.1239 20.6883 18.0517 20.6547 17.9089 20.5942C16.9451 20.1736 16.0527 19.6054 15.264 18.9099C15.0524 18.7252 14.8559 18.5236 14.6544 18.3288C13.9937 17.6961 13.4179 16.9803 12.9415 16.1995L12.8424 16.0399C12.7712 15.9327 12.7137 15.8171 12.6711 15.6957C12.6073 15.4488 12.7736 15.2506 12.7736 15.2506C12.7736 15.2506 13.1816 14.8039 13.3714 14.5621C13.5561 14.327 13.7123 14.0986 13.8131 13.9357C14.0112 13.6166 14.0734 13.2892 13.9692 13.0356C13.499 11.8869 13.012 10.7433 12.5116 9.6081C12.4125 9.38307 12.1186 9.22185 11.8516 9.18995C11.7609 9.17987 11.6702 9.1698 11.5796 9.16308C11.354 9.15187 11.128 9.15412 10.9028 9.1698L11.242 9.15804Z" />
+                                </svg>
                             </a>
                         </li>
                         <li class="social-list__item">
                             <a href="" class="social-list__link">
-                                <img src="./assets/img/icons/i-tg.svg" alt="vk">
+                                <svg width="36" height="30" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M35.5743 2.75203C35.0849 7.90793 32.9638 20.4387 31.8869 26.2147C31.43 28.6621 30.5163 29.4779 29.6679 29.5758C27.7752 29.739 26.3394 28.3358 24.512 27.1284C21.6403 25.2357 20.0087 24.0609 17.235 22.2335C14.0044 20.1124 16.0928 18.9377 17.9529 17.045C18.4424 16.5555 26.7962 8.95217 26.9594 8.26689C26.9821 8.16309 26.9791 8.05534 26.9506 7.95298C26.9222 7.85061 26.8692 7.75674 26.7962 7.67951C26.6005 7.51635 26.3394 7.58161 26.111 7.61424C25.8173 7.67951 21.2488 10.7143 12.3401 16.7187C11.0348 17.5997 9.86007 18.0566 8.81583 18.024C7.64107 17.9913 5.42207 17.3713 3.75782 16.8166C1.70199 16.1639 0.103003 15.805 0.233533 14.6628C0.298797 14.0754 1.11461 13.4881 2.64833 12.868C12.177 8.72374 18.5076 5.98263 21.673 4.67733C30.7448 0.891982 32.6048 0.239334 33.8448 0.239334C34.1059 0.239334 34.7259 0.304597 35.1175 0.63092C35.4438 0.891979 35.5417 1.25094 35.5743 1.512C35.5417 1.70779 35.607 2.29517 35.5743 2.75203Z" />
+                                </svg>
                             </a>
                         </li>
                     </ul>
@@ -162,6 +172,77 @@
                 </button>
             </div>
         </div>
+        <div class="header-mobile">
+            <div class="header-mobile__wrapper">
+                <div class="header-mobile__wrapper-inner">
+                    <div class="header-mobile__top">
+                        <div class="header-mobile__catalog">
+                            <a href="" class="header-mobile__title">Каталог</a>
+                            <ul class="header-mobile__list">
+                                <li class="header-mobile__item">
+                                    <a href="" class="header-mobile__link">Печи и камины</a>
+                                </li>
+                                <li class="header-mobile__item">
+                                    <a href="" class="header-mobile__link">Дымоходы и вентиляция</a>
+                                </li>
+                                <li class="header-mobile__item">
+                                    <a href="" class="header-mobile__link">Баки для бань и отопления</a>
+                                </li>
+                                <li class="header-mobile__item">
+                                    <a href="" class="header-mobile__link">Крепёж и аксессуары</a>
+                                </li>
+                                <li class="header-mobile__item">
+                                    <a href="" class="header-mobile__link">Банные товары</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="header-mobile__menu">
+                            <li class="header-mobile__menu-item">
+                                <a href="" class="header-mobile__menu-link">акции</a>
+                            </li>
+                            <li class="header-mobile__menu-item">
+                                <a href="" class="header-mobile__menu-link">наши работы</a>
+                            </li>
+                            <li class="header-mobile__menu-item">
+                                <a href="" class="header-mobile__menu-link">о компании</a>
+                            </li>
+                            <li class="header-mobile__menu-item">
+                                <a href="" class="header-mobile__menu-link">контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-mobile__bottom">
+                        <p class="header-mobile__bottom-title">Свяжитесь с нами:</p>
+                        <ul class="header-mobile__contacts">
+                            <li class="header-mobile__contacts-item">
+                                <a href="" class="header-mobile__contacts-link">+7 (8352) 25‑31‑04</a>
+                            </li>
+                            <li class="header-mobile__contacts-item">
+                                <a href="" class="header-mobile__contacts-link header-mobile__contacts-link--mail">pochta@mail.ru</a>
+                            </li>
+                        </ul>
+                        <div class="header-mobile__social">
+                            <ul class="social-list">
+                                <li class="social-list__item">
+                                    <a href="" class="social-list__link">
+                                        <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.4891 0.081543C26.764 0.081543 34.2823 7.59988 34.2823 16.8748C34.2823 26.1497 26.764 33.668 17.4891 33.668C14.5213 33.6728 11.6058 32.8874 9.04207 31.3926L0.702542 33.668L2.97299 25.3252C1.47687 22.7606 0.690866 19.8438 0.695824 16.8748C0.695824 7.59988 8.21416 0.081543 17.4891 0.081543ZM11.7659 8.98197L11.4301 8.9954C11.2126 9.00864 11.0001 9.06577 10.8054 9.16333C10.6232 9.26649 10.4569 9.39546 10.3116 9.54622C10.1101 9.73598 9.99593 9.90056 9.87333 10.0601C9.25219 10.8677 8.91775 11.8592 8.92284 12.878C8.9262 13.7009 9.14115 14.5019 9.47701 15.2509C10.1639 16.7656 11.294 18.3694 12.7853 19.8556C13.1447 20.2133 13.4973 20.5727 13.8768 20.9069C15.7298 22.5383 17.9379 23.7148 20.3255 24.3428L21.2793 24.4889C21.59 24.5056 21.9007 24.4821 22.213 24.467C22.7021 24.4418 23.1797 24.3093 23.6119 24.0791C23.8318 23.9658 24.0464 23.8425 24.2551 23.7096C24.2551 23.7096 24.3273 23.6626 24.465 23.5585C24.6917 23.3906 24.8311 23.2713 25.0192 23.0749C25.1586 22.9304 25.2795 22.7608 25.3718 22.5677C25.5028 22.294 25.6338 21.7717 25.6875 21.3368C25.7278 21.0043 25.7161 20.8229 25.711 20.7104C25.7043 20.5307 25.5549 20.3443 25.392 20.2654L24.4146 19.827C24.4146 19.827 22.9536 19.1906 22.0602 18.7842C21.9667 18.7434 21.8665 18.72 21.7646 18.7153C21.6497 18.7035 21.5336 18.7165 21.4242 18.7532C21.3147 18.79 21.2143 18.8498 21.1299 18.9286C21.1215 18.9252 21.0089 19.021 19.7948 20.4921C19.7251 20.5857 19.6291 20.6565 19.519 20.6954C19.409 20.7342 19.2898 20.7395 19.1768 20.7104C19.0674 20.681 18.9602 20.644 18.856 20.5995C18.6478 20.5122 18.5756 20.4786 18.4329 20.4182C17.469 19.9976 16.5767 19.4293 15.7879 18.7338C15.5763 18.5491 15.3798 18.3476 15.1783 18.1528C14.5177 17.52 13.9419 16.8043 13.4654 16.0234L13.3663 15.8638C13.2952 15.7566 13.2376 15.641 13.195 15.5196C13.1312 15.2727 13.2975 15.0746 13.2975 15.0746C13.2975 15.0746 13.7056 14.6279 13.8953 14.386C14.08 14.1509 14.2362 13.9225 14.337 13.7596C14.5351 13.4406 14.5973 13.1131 14.4932 12.8595C14.0229 11.7109 13.5359 10.5672 13.0355 9.43202C12.9364 9.207 12.6425 9.04578 12.3755 9.01387C12.2848 9.0038 12.1942 8.99372 12.1035 8.987C11.878 8.9758 11.652 8.97804 11.4267 8.99372L11.7659 8.98197Z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="" class="social-list__link">
+                                        <svg width="37" height="30" viewBox="0 0 37 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M36.0983 2.57568C35.6088 7.73159 33.4877 20.2624 32.4108 26.0383C31.954 28.4857 31.0403 29.3016 30.1918 29.3995C28.2991 29.5626 26.8633 28.1594 25.0359 26.952C22.1643 25.0594 20.5327 23.8846 17.7589 22.0572C14.5283 19.9361 16.6168 18.7613 18.4768 16.8686C18.9663 16.3792 27.3202 8.77582 27.4833 8.09054C27.506 7.98675 27.503 7.87899 27.4746 7.77663C27.4461 7.67427 27.3931 7.5804 27.3202 7.50316C27.1244 7.34 26.8633 7.40526 26.6349 7.43789C26.3412 7.50316 21.7727 10.538 12.8641 16.5423C11.5588 17.4234 10.384 17.8802 9.33976 17.8476C8.165 17.815 5.946 17.195 4.28175 16.6402C2.22591 15.9876 0.626929 15.6286 0.757458 14.4865C0.822723 13.8991 1.63853 13.3117 3.17225 12.6917C12.7009 8.54739 19.0316 5.80628 22.1969 4.50099C31.2687 0.715636 33.1287 0.0629883 34.3688 0.0629883C34.6298 0.0629883 35.2498 0.128251 35.6414 0.454575C35.9677 0.715633 36.0656 1.07459 36.0983 1.33565C36.0656 1.53144 36.1309 2.11883 36.0983 2.57568Z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     
     <main class="main">
@@ -172,6 +253,32 @@
                         <div class="hero__content">
                             <h1 class="hero__title">Дымоходы и печи от производителя</h1>
                             <p class="hero__text">Собственное производство, монтаж и доставка по Чебоксарам и Чувашии</p>
+                            <div class="hero__gallery">
+                                <div class="swiper hero-swiper">
+                                    <div class="swiper-wrapper hero-swiper__wrapper">
+                                        <div class="swiper-slide hero-swiper__slide">
+                                            <img src="./assets/img/other/h-gallery_1.png" alt="gallery">
+                                        </div>
+                                        <div class="swiper-slide hero-swiper__slide">
+                                            <img src="./assets/img/other/h-gallery_1.png" alt="gallery">
+                                        </div>
+                                    </div>
+                                    <div class="hero-swiper__bottom">
+                                        <div class="hero-swiper__btns">
+                                            <div class="swiper__btn hero-swiper__btn hero-swiper__btn--prev">
+                                                <svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.9209 22.5343C14.7187 21.751 14.7194 20.4658 13.9225 19.6816L7.16547 13.033C6.36911 12.2494 6.36912 10.9653 7.16547 10.1818L13.9225 3.53313C14.7194 2.74895 14.7187 1.46372 13.9209 0.680407L13.8013 0.562961C13.0233 -0.200869 11.7769 -0.200869 10.9989 0.56296L1.20355 10.1802C0.405128 10.9641 0.40513 12.2506 1.20356 13.0345L10.9989 22.6518C11.7769 23.4156 13.0233 23.4156 13.8013 22.6518L13.9209 22.5343Z" fill="#E3DFDC" />
+                                                </svg>
+                                            </div>
+                                            <div class="swiper__btn hero-swiper__btn hero-swiper__btn--next">
+                                                <svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.827141 0.680653C0.0293236 1.46396 0.0286226 2.7492 0.825584 3.53338L7.58258 10.182C8.37893 10.9656 8.37893 12.2496 7.58258 13.0332L0.825584 19.6818C0.0286226 20.466 0.0293236 21.7512 0.82714 22.5346L0.946761 22.652C1.72474 23.4158 2.97115 23.4158 3.74912 22.652L13.5445 13.0347C14.3429 12.2508 14.3429 10.9644 13.5445 10.1805L3.74912 0.563204C2.97115 -0.200624 1.72474 -0.200623 0.946762 0.563206L0.827141 0.680653Z" fill="white" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <button class="btn hero__btn">Оставить заявку</button>
                             <div class="hero-advantages">
                                 <div class="hero-advantages__item">
@@ -241,43 +348,33 @@
             <div class="container">
                 <h2>Каталог</h2>
                 <div class="container__inner">
-                    <div class="">
+                    <div class="swiper-outer">
                         <div class="swiper catalog-swiper swiper-template">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide catalog-swiper__slide">
-                                    <a href="" class="catalog-swiper-card">
-                                        <div class="catalog-swiper-card__img">
-                                            <img src="./assets/img/other/c-item_1.png" alt="catalog">
-                                        </div>
+                                    <a href="" class="catalog-swiper-card" style="--preview: url('/assets/img/other/sect-1.png');">
                                         <div class="catalog-swiper-card__content">
                                             <h3 class="catalog-swiper-card__title">Печи и камины</h3>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="swiper-slide catalog-swiper__slide">
-                                    <a href="" class="catalog-swiper-card">
-                                        <div class="catalog-swiper-card__img">
-                                            <img src="./assets/img/other/c-item_1.png" alt="catalog">
-                                        </div>
+                                    <a href="" class="catalog-swiper-card" style="--preview: url('/assets/img/other/sect-2.png');">
                                         <div class="catalog-swiper-card__content">
                                             <h3 class="catalog-swiper-card__title">Дымоходы и вентиляция</h3>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="swiper-slide catalog-swiper__slide">
-                                    <a href="" class="catalog-swiper-card">
-                                        <div class="catalog-swiper-card__img">
-                                            <img src="./assets/img/other/c-item_1.png" alt="catalog">
-                                        </div>
+                                    <a href="" class="catalog-swiper-card" style="--preview: url('/assets/img/other/sect-3.png');">
                                         <div class="catalog-swiper-card__content">
                                             <h3 class="catalog-swiper-card__title">Крепёж и аксессуары</h3>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="swiper-slide catalog-swiper__slide">
-                                    <a href="" class="catalog-swiper-card">
+                                    <a href="" class="catalog-swiper-card" style="--preview: url('/assets/img/other/sect-4.png');">
                                         <div class="catalog-swiper-card__img">
-                                            <img src="./assets/img/other/c-item_1.png" alt="catalog">
                                         </div>
                                         <div class="catalog-swiper-card__content">
                                             <h3 class="catalog-swiper-card__title">Банные товары</h3>
@@ -285,10 +382,7 @@
                                     </a>
                                 </div>
                                 <div class="swiper-slide catalog-swiper__slide">
-                                    <a href="" class="catalog-swiper-card">
-                                        <div class="catalog-swiper-card__img">
-                                            <img src="./assets/img/other/c-item_1.png" alt="catalog">
-                                        </div>
+                                    <a href="" class="catalog-swiper-card" style="--preview: url('/assets/img/other/sect-4.png');">
                                         <div class="catalog-swiper-card__content">
                                             <h3 class="catalog-swiper-card__title">Дымоходы</h3>
                                         </div>
@@ -343,10 +437,58 @@
                                             </div>
                                             <h3 class="product-card__title">Банная печь Казанская</h3>
                                             <span class="product-card__subtitle">без выноса</span>
-                                            <div class="product-card__price">26 000 ₽</div>
+                                            <div class="product-card__price">
+                                                <span class="product-card__price-new">22 000 ₽</span>
+                                                <span class="product-card__price-old">26 000 ₽</span>
+                                            </div>
                                             <div class="product-card__btns">
                                                 <a href="" class="product-card__link">Подробнее</a>
-                                                <button class="product-card__btn">Заказать</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide new-products-swiper__slide">
+                                    <div class="product-card">
+                                        <a href="" class="product-card__gallery">
+                                            <img src="/assets/img/other/new-1.png"
+                                            data-hover-slides="/assets/img/other/new-2.png, /assets/img/other/new-1.png"
+                                                class="product-card__img" alt="">
+                                        </a>
+                                        <div class="product-card__content">
+                                            <div class="product-card-status" aria-stock="yes">
+                                                <span>В наличии</span>
+                                            </div>
+                                            <h3 class="product-card__title">Банная печь Казанская</h3>
+                                            <span class="product-card__subtitle">без выноса</span>
+                                            <div class="product-card__price">
+                                                <span class="product-card__price-new">22 000 ₽</span>
+                                                <span class="product-card__price-old">26 000 ₽</span>
+                                            </div>
+                                            <div class="product-card__btns">
+                                                <a href="" class="product-card__link">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide new-products-swiper__slide">
+                                    <div class="product-card">
+                                        <a href="" class="product-card__gallery">
+                                            <img src="/assets/img/other/new-1.png"
+                                            data-hover-slides="/assets/img/other/new-2.png, /assets/img/other/new-1.png"
+                                                class="product-card__img" alt="">
+                                        </a>
+                                        <div class="product-card__content">
+                                            <div class="product-card-status" aria-stock="yes">
+                                                <span>В наличии</span>
+                                            </div>
+                                            <h3 class="product-card__title">Банная печь Казанская</h3>
+                                            <span class="product-card__subtitle">без выноса</span>
+                                            <div class="product-card__price">
+                                                <span class="product-card__price-new">22 000 ₽</span>
+                                                <span class="product-card__price-old">26 000 ₽</span>
+                                            </div>
+                                            <div class="product-card__btns">
+                                                <a href="" class="product-card__link">Подробнее</a>
                                             </div>
                                         </div>
                                     </div>
@@ -389,19 +531,151 @@
                                 <h2>О компании</h2>
                             </div>
                         </div>
-                        <div class="about-company__left">
-                            <img src="./assets/img/photo/about.svg" alt="">
+                        <div class="about-company__wrapper-inner">
+                            <div class="about-company__img">
+                                <img src="/assets/img/photo/about.svg" alt="">
+                            </div>
+                            <div class="about-company__description">
+                                <p class="about-company__text">
+                                    <span>CRAFER</span> — производитель дымоходов в Чебоксарах с более чем 15-летним опытом, ранее известный как "Сфера труб". 
+                                    Мы предлагаем дымоходы диаметром от 80 до 500 мм 
+                                    и индивидуальные решения для монтажа. Наш магазин находится по адресу: г. Чебоксары, ул. Пристанционная, дом 7c1.
+                                    <br><br>
+                                    Crafer предлагает конкурентоспособные цены и работает 
+                                    с частными клиентами и крупными предприятиями. 
+                                    В ассортименте также печи, камины, бани и мангалы.
+                                    <br><br>
+                                    Приглашаем оптовиков стать нашими дилерами в других регионах. Узнайте больше на нашем сайте.
+                                    <br><br>
+                                    Гарантируем высокое качество продукции и профессиональный сервис. У нас можно купить готовые изделия или заказать установку под ключ. Оперативная обработка заказов — многие из них выполняются в день заявки.
+                                    <br><br>
+                                    Наши консультанты готовы помочь с выбором дымоходов. Ждем вас в будние дни с 8:00 до 18:00 и в выходные с 8:00 до 14:00. Приглашаем оптовиков стать нашими дилерами в других регионах. Узнайте больше на нашем сайте.
+                                </p>
+                                <div class="about-company__btn-wrapper">
+                                    <button class="btn-link about-company__btn">
+                                        Подробнее
+                                        <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.333374 8.18927V10.8559H18.0239L12.0239 18.3708H15.5239L21.6667 10.8559V8.18927L15.5239 0.37085H12.0239L18.0239 8.18927H0.333374Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="about-company__right">
-                            <p class="about-company__text">
-                                <span>CRAFER</span> — многопрофильная производственная компания в Чебоксарах. <br>
-                                <br>
-                                Мы предлагаем:
-                                продукцию для печей и бань, дымоходные системы и вентсети, баки для бань и отопления,
-                                турбодефлекторы и крепёж.
-                                <br><br>
-                                Мы — официальный партнёр профсоюзной дисконтной программы Чувашии. 
-                            </p>
+                        <div class="about-company__wrapper-bottom-wrapper">
+                            <div class="about-company__wrapper-bottom">
+                                <div class="about-company__description">
+                                    <p class="about-company__text">
+                                        В нашем магазине в Чебоксарах вы найдете сэндвич дымоходы Крафер — надежное и качественное решение для систем отопления. 
+                                        <br><br>
+                                        Наши дымоходы изготавливаются из высококачественных материалов, легко монтируются благодаря двухслойной конструкции с теплоизоляцией, и подходят для любых котлов. Они обеспечивают безопасное удаление отходов сгорания, имеют высокую теплоизоляцию и защиту от коррозии.
+                                        <br><br>
+                                        Мы предлагаем разнообразие диаметров и длин, чтобы удовлетворить ваши потребности. Не экономьте на качестве — выберите наши сэндвич дымоходы для комфортного и безопасного отопления. Сделайте заказ прямо сейчас!                                </p>
+                                </div>
+                                <div class="about-company__img">
+                                    <img src="/assets/img/photo/company-content-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- О компании -->
+        <section class="section">
+            <div class="container">
+                <div class="company-content">
+                    <div class="company-content__wrapper">
+                        <div class="company-content__row">
+                            <div class="company-content__item">
+                                <div class="company-content__description">
+                                    <p>
+                                        <span>Видеоэкскурсия по CRAFER</span> — уникальная возможность узнать 
+                                        о качественных и надежных дымоходах, производимых нашей компанией в Чувашии.
+                                        <br><br>
+                                        В ходе экскурсии вы познакомитесь с нашим фирменным салоном, где представлен широкий ассортимент дымоходов различных конфигураций и дизайна. Наши специалисты помогут выбрать оптимальное решение для вашего дома.
+                                        <br><br>
+                                        Первым шагом в нашей экскурсии будет знакомство 
+                                        с фирменным салоном Крафер, где вы сможете увидеть широкий ассортимент дымоходов различной конфигурации, материалов и дизайна. Наши специалисты расскажут 
+                                        вам о преимуществах каждого из наших продуктов и помогут выбрать оптимальное решение для вашего дома.
+                                    </p>
+                                    <div class="company-content__btn-wrapper">
+                                        <button class="btn-link company-content__btn">
+                                            Смотреть все видео
+                                            <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.333374 8.18927V10.8559H18.0239L12.0239 18.3708H15.5239L21.6667 10.8559V8.18927L15.5239 0.37085H12.0239L18.0239 8.18927H0.333374Z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="company-content__image">
+                                    <div class="video-preview" data-video="https://rutube.ru/video/49f45f3dd6ad03c8123bf309ca6a64ae/?r=wd">
+                                        <svg width="176" height="173" class="video-preview__play" viewBox="0 0 176 173" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_103_882)">
+                                              <path d="M88.0003 161.232C128.501 161.232 161.334 128.4 161.334 87.8988C161.334 47.3979 128.501 14.5654 88.0003 14.5654C47.4994 14.5654 14.667 47.3979 14.667 87.8988C14.667 128.4 47.4994 161.232 88.0003 161.232Z" stroke-width="5" stroke-linejoin="round" />
+                                              <path d="M73.333 87.8985V62.4951L95.333 75.1968L117.333 87.8985L95.333 100.6L73.333 113.302V87.8985Z" stroke-width="5" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                              <clipPath id="clip0_103_882">
+                                                <rect width="176" height="172" transform="translate(0 0.375)" />
+                                              </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <img src="/assets/img/photo/company-content-1.png" alt="Превью видео" class="video-preview__img" style="width:100%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="company-content__row">
+                            <div class="company-content__item">
+                                <div class="company-content__description">
+                                    <p>
+                                        Далее наша экскурсия проведет вас на производственное предприятие Крафер, где вы сможете увидеть все этапы создания дымоходов – от исследования и разработки 
+                                        до выпуска готовой продукции. Мы используем самые современные технологии и материалы, чтобы обеспечить надежность и долговечность наших изделий.
+                                    </p>
+                                </div>
+                                <div class="company-content__image">
+                                    <div class="video-preview" data-video="https://rutube.ru/video/49f45f3dd6ad03c8123bf309ca6a64ae/?r=wd">
+                                        <svg width="176" height="173" class="video-preview__play" viewBox="0 0 176 173" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_103_882)">
+                                              <path d="M88.0003 161.232C128.501 161.232 161.334 128.4 161.334 87.8988C161.334 47.3979 128.501 14.5654 88.0003 14.5654C47.4994 14.5654 14.667 47.3979 14.667 87.8988C14.667 128.4 47.4994 161.232 88.0003 161.232Z" stroke="#F1F1F1" stroke-width="5" stroke-linejoin="round" />
+                                              <path d="M73.333 87.8985V62.4951L95.333 75.1968L117.333 87.8985L95.333 100.6L73.333 113.302V87.8985Z" fill="#F1F1F1" stroke="#F1F1F1" stroke-width="5" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                              <clipPath id="clip0_103_882">
+                                                <rect width="176" height="172" fill="white" transform="translate(0 0.375)" />
+                                              </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <img src="/assets/img/photo/company-content-1.png" alt="Превью видео" class="video-preview__img" style="width:100%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="company-content__row">
+                            <div class="company-content__item">
+                                <div class="company-content__description">
+                                    <p>
+                                        В конце экскурсии мы рады представить вам нашу гордость – готовые дымоходы Крафер. Вы увидите, какие они красивые, стильные и функциональные. Мы гарантируем высокое качество и безопасность нашей продукции, а также индивидуальный подход к каждому клиенту.
+                                    </p>
+                                </div>
+                                <div class="company-content__image">
+                                    <div class="video-preview" data-video="https://rutube.ru/video/49f45f3dd6ad03c8123bf309ca6a64ae/?r=wd">
+                                        <svg width="176" height="173" class="video-preview__play" viewBox="0 0 176 173" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_103_882)">
+                                              <path d="M88.0003 161.232C128.501 161.232 161.334 128.4 161.334 87.8988C161.334 47.3979 128.501 14.5654 88.0003 14.5654C47.4994 14.5654 14.667 47.3979 14.667 87.8988C14.667 128.4 47.4994 161.232 88.0003 161.232Z" stroke="#F1F1F1" stroke-width="5" stroke-linejoin="round" />
+                                              <path d="M73.333 87.8985V62.4951L95.333 75.1968L117.333 87.8985L95.333 100.6L73.333 113.302V87.8985Z" fill="#F1F1F1" stroke="#F1F1F1" stroke-width="5" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                              <clipPath id="clip0_103_882">
+                                                <rect width="176" height="172" fill="white" transform="translate(0 0.375)" />
+                                              </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <img src="/assets/img/photo/company-content-1.png" alt="Превью видео" class="video-preview__img" style="width:100%;">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -482,8 +756,8 @@
 
         <!-- Выполненные работы -->
         <section class="section">
-            <div class="container">
-                <div class="container__top">
+            <div class="container works-container">
+                <div class="container__top works-top">
                     <h2>Выполненные работы</h2>
                     <a href="" class="btn btn--arrow">
                         <span>Смотреть все</span>
@@ -564,7 +838,7 @@
         </section>
 
         <!-- Форма -->
-        <section class="section">
+        <!-- <section class="section">
             <div class="container">
                 <div class="form-block">
                     <div class="form-block__wrapper">
@@ -596,6 +870,72 @@
                         </div>
                         <div class="form-block__right">
                             <img src="/assets/img/icons/form-logo.svg" alt="logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Вызов мастера -->
+        <section class="section">
+            <div class="container">
+                <div class="call-master">
+                    <div class="call-master__wrapper">
+                        <div class="call-master__left">
+                            <h2 class="call-master__title">Бесплатный вызов замерщика</h2>
+                            <p class="call-master__text">
+                                Новые дымоходы и печи будут установлены правильно и прослужат долго только при точно снятых замерах. В нашей компании предусмотрена услуга вызова на дом замерщика.
+                                Сразу после выполнения замеров и уточнения других параметров, вы сможете узнать точную стоимость будущей конструкции.
+                            </p>
+                            <button class="btn call-master__btn">Вызвать на замер</button>
+                        </div>
+                        <div class="call-master__right">
+                            <img src="/assets/img/icons/call-master.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Сертификаты -->
+        <section class="section">
+            <div class="container">
+                <div class="catalog-sections">
+                    <div class="catalog-sections__top">
+                        <h2>Сертификаты</h2>
+                        <div class="swiper-template__btns">
+                            <div class="swiper__btn catalog-swiper__btn swiper-certificate-btn--prev">
+                                <svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.9209 22.5343C14.7187 21.751 14.7194 20.4658 13.9225 19.6816L7.16547 13.033C6.36911 12.2494 6.36912 10.9653 7.16547 10.1818L13.9225 3.53313C14.7194 2.74895 14.7187 1.46372 13.9209 0.680407L13.8013 0.562961C13.0233 -0.200869 11.7769 -0.200869 10.9989 0.56296L1.20355 10.1802C0.405128 10.9641 0.40513 12.2506 1.20356 13.0345L10.9989 22.6518C11.7769 23.4156 13.0233 23.4156 13.8013 22.6518L13.9209 22.5343Z" fill="#E3DFDC" />
+                                </svg>
+                            </div>
+                            <div class="swiper__btn catalog-swiper__btn swiper-certificate-btn--next">
+                                <svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.827141 0.680653C0.0293236 1.46396 0.0286226 2.7492 0.825584 3.53338L7.58258 10.182C8.37893 10.9656 8.37893 12.2496 7.58258 13.0332L0.825584 19.6818C0.0286226 20.466 0.0293236 21.7512 0.82714 22.5346L0.946761 22.652C1.72474 23.4158 2.97115 23.4158 3.74912 22.652L13.5445 13.0347C14.3429 12.2508 14.3429 10.9644 13.5445 10.1805L3.74912 0.563204C2.97115 -0.200624 1.72474 -0.200623 0.946762 0.563206L0.827141 0.680653Z" fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__inner">
+                        <div class="certificates">
+                            <div class="certificates__wrapper">
+                                <div class="swiper swiper-certificate">
+                                    <div class="swiper-wrapper swiper-certificate__wrapper">
+                                        <a href="" class="swiper-slide swiper-certificate__slide">
+                                            <img src="/assets/img/other/cert.png" class="swiper-certificate__img" alt="">
+                                        </a>
+                                        <a href="" class="swiper-slide swiper-certificate__slide">
+                                            <img src="/assets/img/other/cert.png" class="swiper-certificate__img" alt="">
+                                        </a>
+                                        <a href="" class="swiper-slide swiper-certificate__slide">
+                                            <img src="/assets/img/other/cert.png" class="swiper-certificate__img" alt="">
+                                        </a>
+                                        <a href="" class="swiper-slide swiper-certificate__slide">
+                                            <img src="/assets/img/other/cert.png" class="swiper-certificate__img" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -650,70 +990,16 @@
         </section>
     </main>
 
-    <!-- <div class="modal modal-form">
-        <div class="modal__body modal-form__body">
-            <div class="modal__wrapper modal-form__wrapper">
-                <button class="close-modal modal-form__close">
-                    <img src="/assets/img/icons/closeModal.svg" alt="">
-                </button>
-                <div class="modal__info">
-                    <div class="modal-form-block">
-                        <div class="modal-form-block__wrapper">
-                            <div class="modal-form-block__top">
-                                <h2 class="modal-form-block__title">Заполните форму и наш специалист свяжется с вами</h2>
-                            </div>
-                            <form action="" class="form request-form">
-                                <div class="request-form__wrapper">
-                                    <div class="request-form__item">
-                                        <label for="name" class="request-form__label">
-                                            <span class="request-form__label-text">Имя</span>
-                                            <input type="text" class="input request-form__input" name="name" placeholder="Ваше имя">
-                                        </label>
-                                    </div>
-                                    <div class="request-form__item">
-                                        <label for="phone" class="request-form__label">
-                                            <span class="request-form__label-text">Телефон</span>
-                                            <input type="text" class="input request-form__input" name="phone" placeholder="+7 (999) 999-99-99">
-                                        </label>
-                                    </div>
-                                    <div class="request-form__item">
-                                        <label for="phone" class="request-form__label">
-                                            <span class="request-form__label-text">Как с вами связаться</span>
-                                            <div class="request-form__dropdown">
-                                                <div class="request-form__dropdown-selected" id="dropdown-events">
-                                                    <span>По телефону</span>
-                                                    <svg width="23" height="14" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M22.2204 1.62024C21.5872 0.714598 20.2874 0.605727 19.5124 1.39341L12.927 8.08616C12.1434 8.88251 10.8594 8.88251 10.0758 8.08616L3.49642 1.39955C2.72339 0.613926 1.42427 0.734502 0.809036 1.64898C0.340191 2.34586 0.435301 3.27805 1.03522 3.86589L10.1064 12.7543C10.8821 13.5145 12.1227 13.5166 12.901 12.7591L22.0046 3.89935C22.6254 3.2952 22.7167 2.33016 22.2204 1.62024Z" />
-                                                    </svg>
-                                                </div>
-                                                <div class="request-form__dropdown-container">
-                                                    <ul class="request-form__dropdown-list" id="dropdown-list-events">
-                                                        <li class="request-form__dropdown-item" data-event="1">По телефону</li>
-                                                        <li class="request-form__dropdown-item" data-event="2">По почте</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </label>
-                                    </div>
-                                    <input type="hidden" name="event" id="selected-event" value="">
-                                </div>
-                                <div class="request-form__bottom">
-                                    <button class="btn request-form__btn">
-                                        Оставить заявку
-                                    </button>
-                                    <span class="request-form__confirm">
-                                        Нажимая кнопку “Оставить заявку” я даю согласие на отправку и обработку своих <a href="">персональных данных</a>
-                                    </span>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+    <div class="cookie" id="cookie_notification">
+        <div class="cookie__wrapper">
+            <div class="cookie__inner">
+                <p class="cookie__text">Используем файлы cookies для обеспечения корректной работы сайта, персонализации пользователей и других целей, предусмотренных <a href="">политикой обработки персональных данных</a>.</p>
+                <button class="btn cookie__btn">Хорошо</button>
             </div>
         </div>
-    </div> -->
+    </div>
 
-    <!-- <div class="modal modal-call">
+    <div class="modal modal-call">
         <div class="modal__body modal-call__body">
             <div class="modal__wrapper modal-call__wrapper">
                 <button class="close-modal modal-call__close">
@@ -729,27 +1015,6 @@
                                 <div class="modal-call-content__wrapper">
                                     <p class="modal-call-content__title">Свяжитесь с нами!</p>
                                     <a href="tel:+78352253104" class="modal-call-content__link">+7 (8352) 25‑31‑04</a>
-                                    <div class="modal-call-content__or">
-                                        <p>или</p>
-                                    </div>
-                                    <ul class="modal-call-content__list">
-                                        <li class="modal-call-content__item">
-                                            <a href="" class="modal-call-content__item-link">
-                                                <svg width="29" height="25" viewBox="0 0 29 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M28.9923 2.14032C28.5908 6.53214 26.8511 17.2059 25.9679 22.1259C25.5932 24.2106 24.8438 24.9055 24.1479 24.9889C22.5955 25.1279 21.4179 23.9327 19.919 22.9042C17.5638 21.292 16.2255 20.2913 13.9505 18.7347C11.3008 16.928 13.0138 15.9273 14.5393 14.3151C14.9408 13.8982 21.7926 7.42163 21.9264 6.8379C21.945 6.74949 21.9425 6.6577 21.9192 6.57051C21.8959 6.48332 21.8524 6.40336 21.7926 6.33757C21.632 6.19859 21.4179 6.25418 21.2305 6.28197C20.9896 6.33757 17.2426 8.92263 9.93582 14.0372C8.86523 14.7877 7.9017 15.1768 7.04523 15.149C6.0817 15.1212 4.2617 14.5931 2.8967 14.1205C1.21053 13.5646 -0.100942 13.2589 0.00611723 12.286C0.0596466 11.7857 0.728764 11.2853 1.9867 10.7572C9.80199 7.22705 14.9943 4.89216 17.5905 3.7803C25.0311 0.555928 26.5567 0 27.5738 0C27.7879 0 28.2964 0.0555913 28.6176 0.333555C28.8852 0.555926 28.9655 0.861687 28.9923 1.08406C28.9655 1.25084 29.019 1.75117 28.9923 2.14032Z" />
-                                                </svg>
-                                                <span>Написать в Telegram</span>
-                                            </a>
-                                        </li>
-                                        <li class="modal-call-content__item">
-                                            <a href="" class="modal-call-content__item-link">
-                                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12 0C18.6276 0 24 5.59625 24 12.5C24 19.4037 18.6276 25 12 25C9.87934 25.0035 7.796 24.4189 5.96401 23.3062L0.00481688 25L1.62722 18.79C0.558128 16.8811 -0.00352605 14.71 1.66563e-05 12.5C1.66563e-05 5.59625 5.37241 0 12 0ZM7.91041 6.625L7.67041 6.635C7.51504 6.64485 7.36319 6.68737 7.22401 6.76C7.09384 6.83678 6.97501 6.93278 6.87121 7.045C6.72721 7.18625 6.64561 7.30874 6.55801 7.4275C6.11416 8.02862 5.87518 8.76664 5.87881 9.52499C5.88121 10.1375 6.03481 10.7337 6.27481 11.2912C6.76561 12.4187 7.57321 13.6125 8.63881 14.7187C8.89561 14.985 9.14761 15.2525 9.41881 15.5012C10.7429 16.7156 12.3207 17.5913 14.0268 18.0587L14.7084 18.1675C14.9304 18.18 15.1524 18.1625 15.3756 18.1512C15.7251 18.1324 16.0663 18.0339 16.3752 17.8625C16.5324 17.7782 16.6857 17.6864 16.8348 17.5875C16.8348 17.5875 16.8864 17.5525 16.9848 17.475C17.1468 17.35 17.2464 17.2612 17.3808 17.115C17.4804 17.0075 17.5668 16.8812 17.6328 16.7375C17.7264 16.5337 17.82 16.145 17.8584 15.8212C17.8872 15.5737 17.8788 15.4387 17.8752 15.355C17.8704 15.2212 17.7636 15.0825 17.6472 15.0237L16.9488 14.6975C16.9488 14.6975 15.9048 14.2237 15.2664 13.9212C15.1996 13.8909 15.128 13.8735 15.0552 13.87C14.9731 13.8612 14.8901 13.8708 14.8119 13.8982C14.7337 13.9256 14.662 13.9701 14.6016 14.0287C14.5956 14.0262 14.5152 14.0975 13.6476 15.1925C13.5978 15.2622 13.5292 15.3149 13.4506 15.3438C13.3719 15.3728 13.2868 15.3766 13.206 15.355C13.1278 15.3332 13.0512 15.3056 12.9768 15.2725C12.828 15.2075 12.7764 15.1825 12.6744 15.1375C11.9857 14.8244 11.348 14.4014 10.7844 13.8837C10.6332 13.7462 10.4928 13.5962 10.3488 13.4512C9.87671 12.9803 9.46528 12.4475 9.12481 11.8662L9.05401 11.7475C9.00316 11.6677 8.96204 11.5816 8.93161 11.4912C8.88601 11.3075 9.00481 11.16 9.00481 11.16C9.00481 11.16 9.29641 10.8275 9.43201 10.6475C9.56401 10.4725 9.67561 10.3025 9.74761 10.1812C9.88921 9.94374 9.93361 9.69999 9.85921 9.51124C9.52321 8.65624 9.17521 7.80499 8.81761 6.96C8.74681 6.7925 8.53681 6.6725 8.34601 6.64875C8.28121 6.64125 8.21641 6.63375 8.15161 6.62875C7.99046 6.62041 7.82897 6.62208 7.66801 6.63375L7.91041 6.625Z" />
-                                                </svg>
-                                                <span>Написать в WhatsApp</span>
-                                            </a>
-                                        </li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -757,26 +1022,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
-
-    <!-- <div class="modal modal-success">
-        <div class="modal__body modal-success__body">
-            <div class="modal__wrapper modal-success__wrapper">
-                <button class="close-modal modal-success__close">
-                    <img src="/assets/img/icons/closeModal.svg" alt="">
-                </button>
-                <div class="modal__info">
-                    <div class="modal-success-block">
-                        <img src="/assets/img/icons/success.svg" alt="" class="modal-success-block__icon">
-                        <div class="modal-success-block__wrapper">
-                            <p class="modal-success-block__title">Спасибо!</p>
-                            <p class="modal-success-block__text">Ваше сообщение отправлено. В ближайшее время с вами свяжется наш сотрудник.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
+    </div>
 
     <footer class="footer">
         <div class="container">
@@ -868,6 +1114,33 @@
                         </li>
                     </ul>
                     <span class="footer__bottom-text">© 2025 CRAFER</span>
+                    <div class="footer__bottom-logo">
+                        <a href="">
+                            <svg width="80" height="65" viewBox="0 0 80 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_234_606)">
+                                  <path d="M12.486 16.584C17.839 7.14105 28.0346 0.759277 39.7354 0.759277C51.4491 0.759277 61.6447 7.14105 66.9847 16.584" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" />
+                                  <path d="M12.4861 46.832C17.8391 56.275 28.0346 62.6567 39.7353 62.6567C51.4359 62.6567 61.6447 56.275 66.9847 46.832" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" />
+                                  <path d="M25.849 42.8242H26.6864L29.0163 47.0917L31.2804 42.8242H32.1181V49.4653H31.2282V44.5234L29.4612 47.7922C29.3827 47.9349 29.3173 48.0256 29.2519 48.0906C29.1864 48.1424 29.1078 48.1813 29.0163 48.1813H28.7544L26.7389 44.5234V49.4785H25.8358V42.8242H25.849Z" fill="#979797" />
+                                  <path d="M33.7408 49.2843C33.6097 49.1547 33.5443 48.9861 33.5443 48.7655V42.8379H38.2429V43.6289H34.4474V45.7044H37.9549V46.4826H34.4474V48.7008H38.2429V49.492H34.2642C34.0547 49.479 33.8716 49.414 33.7408 49.2843Z" fill="#979797" />
+                                  <path d="M39.5785 49.2843C39.4476 49.1547 39.3821 48.9861 39.3821 48.7655V42.8379H42.3008C42.7851 42.8379 43.2169 42.9286 43.5833 43.1101C43.9499 43.2917 44.2379 43.5512 44.434 43.8884C44.6305 44.2256 44.7352 44.6148 44.7352 45.0559V47.0663C44.7352 47.8575 44.5388 48.4542 44.133 48.8694C43.7274 49.2715 43.1385 49.479 42.353 49.479H40.1152C39.8794 49.479 39.7093 49.414 39.5785 49.2843ZM42.3138 48.6747C42.8113 48.6747 43.1907 48.5451 43.4394 48.2727C43.7012 48.0002 43.8188 47.5981 43.8188 47.0534V45.0818C43.8188 44.6537 43.675 44.3035 43.387 44.044C43.0992 43.7847 42.7326 43.655 42.2616 43.655H40.2852V48.6747H42.3138Z" fill="#979797" />
+                                  <path d="M46.0179 42.8242H46.934V49.4653H46.0179V42.8242Z" fill="#979797" />
+                                  <path d="M52.2738 47.7278H49.4862L48.8317 49.479H47.8893L50.4808 42.8379H50.8864C51.1614 42.8379 51.3577 42.9804 51.4756 43.2787L53.8837 49.479H52.9414L52.2738 47.7278ZM49.7478 46.9755H52.0121L50.8864 43.9793H50.8734L49.7478 46.9755Z" fill="#979797" />
+                                  <path d="M0 24.9893H2.26423V30.6965H8.97835V24.9893H11.2295V38.4403H8.97835V32.6551H2.26423V38.4403H0V24.9893Z" fill="#979797" />
+                                  <path d="M14.0562 24.9893H16.3204V38.4403H14.0562V24.9893Z" fill="#979797" />
+                                  <path d="M35.2064 26.9216H30.9006V24.9761H41.7767V26.9216H37.4707V38.4271H35.2064V26.9216Z" fill="#979797" />
+                                  <path d="M43.8971 37.9861C43.5959 37.6877 43.4388 37.2858 43.4388 36.8059V24.9893H53.3858V26.9348H45.7031V30.5797H52.7969V32.5384H45.7031V36.4946H53.3858V38.4403H45.101C44.6167 38.4403 44.2111 38.2844 43.8971 37.9861Z" fill="#979797" />
+                                  <path d="M57.234 37.9603C56.514 37.5451 55.9512 36.9484 55.5456 36.1961C55.1398 35.4308 54.9435 34.5487 54.9435 33.5501V29.8663C54.9435 28.8674 55.153 27.9853 55.5586 27.2201C55.9643 26.4548 56.5402 25.8712 57.2732 25.4561C58.006 25.041 58.8567 24.8335 59.8384 24.8335H61.8932C62.8095 24.8335 63.6208 25.028 64.3408 25.4172C65.0474 25.8063 65.5971 26.3641 65.9897 27.0644C66.3823 27.7779 66.5656 28.595 66.5656 29.5289H64.3408C64.3408 28.7118 64.1182 28.0503 63.6602 27.5443C63.2021 27.0385 62.6262 26.792 61.8932 26.792H59.8254C59.04 26.792 58.3986 27.0774 57.9276 27.6611C57.4433 28.2319 57.2077 28.9972 57.2077 29.9311V33.4721C57.2077 34.419 57.4433 35.1843 57.9013 35.7551C58.3726 36.3258 58.9745 36.611 59.7468 36.611H61.8408C62.587 36.611 63.2021 36.3258 63.6602 35.768C64.1312 35.2104 64.3538 34.4708 64.3538 33.576H66.5788C66.5788 34.5746 66.3823 35.4567 65.9897 36.2091C65.5971 36.9614 65.0343 37.5451 64.3276 37.973C63.6077 38.3882 62.7833 38.5956 61.8408 38.5956H59.7468C58.7912 38.5827 57.9538 38.3752 57.234 37.9603Z" fill="#979797" />
+                                  <path d="M68.4891 24.9893H70.7534V30.6965H77.4678V24.9893H79.7186V38.4403H77.4678V32.6551H70.7534V38.4403H68.4891V24.9893Z" fill="#979797" />
+                                  <path d="M23.6105 33.6796C24.7091 33.6796 25.5998 32.7969 25.5998 31.708C25.5998 30.619 24.7091 29.7363 23.6105 29.7363C22.5118 29.7363 21.6212 30.619 21.6212 31.708C21.6212 32.7969 22.5118 33.6796 23.6105 33.6796Z" fill="#979797" />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_234_606">
+                                    <rect width="80" height="64" fill="white" transform="translate(0 0.0224609)" />
+                                  </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

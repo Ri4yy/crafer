@@ -11,6 +11,13 @@
             grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
             gap: 28px;
         } 
+        @media(max-width: $breakpoint768) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+        @media(max-width: 365px) {
+            grid-template-columns: 1fr;
+        }
     }
     &__item {
         container: card / inline-size;

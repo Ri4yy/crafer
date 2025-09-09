@@ -1,0 +1,34 @@
+.btn-link {
+    font-weight: 600;
+    font-size: 20px;
+    color: $red;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    transition: color 0.3s ease-in-out;
+
+    & svg {
+        fill: $red;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    @media(max-width: $breakpoint480) {
+        font-size: 16px;
+        gap: 10px;
+
+        & svg {
+            width: 14px;
+        }
+    }
+
+    &:hover {
+        color: #be1a26;
+
+        & svg {
+            transform: translateX(3px);
+            fill: #be1a26;
+        }
+    }
+}

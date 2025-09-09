@@ -1,6 +1,10 @@
 .swiper-detail-product-small {
     margin-top: 10px;
 
+    @media(max-width: $breakpoint480) {
+        margin-top: 6px;
+    }
+
     &__slide {
 
         &-img {

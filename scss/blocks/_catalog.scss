@@ -61,9 +61,6 @@
             max-width: 600px;
             margin: 36px auto 0 auto;
         }
-        @media(max-width: $breakpoint600) {
-            max-width: 275px;
-        } 
     }
     &__bottom {
         margin-top: 28px;

@@ -13,15 +13,28 @@
 
         display: flex;
         justify-content: center;
+
+        @media(max-width: $breakpoint1024) {
+            width: 100%;
+        }
+        @media(max-width: $breakpoint600) {
+            background: transparent;
+            box-shadow: none;
+            border-radius: 0;
+        }
     }
     &__right {
         width: 42%;
         
         box-shadow:
-        inset -8px 0 16px -8px rgba(0,0,0,0.18),   /* справа */
-        inset 0 8px 16px -8px rgba(0,0,0,0.18);    /* снизу */
-        border-radius: 20px;
+        inset -8px 0 16px -8px rgba(0,0,0,0.18),  
+        inset 0 8px 16px -8px rgba(0,0,0,0.18);    
+        border-radius: 20px 20px 20px 5px;
         overflow: hidden;   
+
+        @media(max-width: $breakpoint1024) {
+            display: none;
+        }
     }
     &__content {
         display: flex;
@@ -29,12 +42,40 @@
         
         max-width: 642px;
         padding: 62px 16px;
+
+        @media(max-width: $breakpoint1024) {
+            max-width: 100%;
+            padding: 46px 48px;
+
+            align-items: center;
+        }
+        @media(max-width: $breakpoint600) {
+            padding: 0;
+        }
+
+        & .hero__gallery {
+            display: none;
+
+            @media(max-width: $breakpoint1024) {
+                display: flex;
+            }
+        }
     }
     &__title {
         font-family: $second-family;
         font-weight: 400;
         font-size: 48px;
         color: $dark-gray;
+
+        @media(max-width: $breakpoint1024) {
+            text-align: center;
+        }
+        @media(max-width: $breakpoint768) {
+            font-size: 36px;
+        }
+        @media(max-width: $breakpoint600) {
+            font-size: 30px;
+        }
     }
     &__text {
         margin-top: 20px;
@@ -42,11 +83,54 @@
         font-weight: 500;
         font-size: 20px;
         color: $dark-gray;
+
+        @media(max-width: $breakpoint1024) {
+            max-width: 530px;
+            text-align: center;
+        }
+        @media(max-width: $breakpoint600) {
+            display: none;
+        }
     }
     &__btn {
         margin-top: 48px;
 
         background: $red;
         width: fit-content;
+
+        @media(max-width: $breakpoint1024) {
+            margin-top: 26px;
+
+            order: 4;
+        }
+        @media(max-width: $breakpoint600) {
+            display: none;
+        }
+
+        &:hover {
+            background: #be1a26;
+        }
+    }
+
+    &__gallery {
+        display: flex;
+        height: 100%;
+
+        @media(max-width: $breakpoint1024) {
+            margin-top: 26px;
+            min-width: 0;
+            max-width: 660px;
+            width: 100%;
+
+            max-height: 510px;
+
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        @media(max-width: $breakpoint600) {
+            margin-top: 20px;
+
+            max-height: 290px;
+        }
     }
 }

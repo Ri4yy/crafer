@@ -1,0 +1,94 @@
+.cookie {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100%;
+    z-index: 2;
+
+    max-width: 850px;
+    width: 100%;
+
+    &.show {
+        display: block;
+    }
+
+    @media(max-width: $breakpoint1024) {
+        max-width: 630px;
+    }
+    @media(max-width: $breakpoint768) {
+        max-width: 360px;
+
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @media(max-width: $breakpoint375) {
+        max-width: 300px;
+    }
+
+    &__wrapper {
+        padding: 24px 56px;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+        background: #f1f1f1;
+        border: 1px solid #d1d1d0;
+        border-radius: 24px;
+
+        @media(max-width: $breakpoint1024) {
+            padding: 24px 44px;
+            border-radius: 20px;
+        }
+        @media(max-width: $breakpoint768) {
+            padding: 16px 12px;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        @media(max-width: $breakpoint768) {
+            flex-direction: column;
+        }
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        color: #323232;
+
+        @media(max-width: $breakpoint1024) {
+            font-size: 15px;
+        }
+        @media(max-width: $breakpoint768) {
+            font-size: 14px;
+            text-align: center;
+            max-width: 270px;
+        }
+
+        & a {
+            text-decoration: underline;
+            color: #323232;
+
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+
+    &__btn {
+        padding: 12px 42px;
+        background: $red;
+        font-size: 16px;
+
+        &:hover {
+            background: rgb(190, 26, 38);
+        }
+
+        @media(max-width: $breakpoint768) {
+            padding: 8px 28px;
+            font-size: 14px;
+        }
+    }
+}

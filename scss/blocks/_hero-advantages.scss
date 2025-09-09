@@ -5,12 +5,49 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 
+    @media(max-width: $breakpoint1024) {
+        margin-top: 45px;
+
+        max-width: 610px;
+    }
+    @media(max-width: $breakpoint768) {
+        gap: 16px;
+    }
+    @media(max-width: $breakpoint600) {
+        margin-top: 32px;
+    }
+    @media(max-width: $breakpoint375) {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 32px;
+    }
+
     &__item {
         position: relative;
         
         padding: 60px 16px 26px;
         border-radius: 16px;
         background: #fafafa;
+        transition: box-shadow 0.3s ease,
+        scale 0.3s ease;
+
+        &:hover {
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+            scale: 1.02;
+        }
+
+        @media(max-width: $breakpoint768) {
+            padding: 40px 10px 16px;
+        }
+        @media(max-width: $breakpoint600) {
+            padding: 32px 6px 18px 6px;
+            background: #dbdbdb;
+            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+        }
+        @media(max-width: $breakpoint375) {
+            &:last-child {
+                grid-column: 1 / -1;
+            }
+        }
     }
     &__avatar {
         position: absolute;
@@ -22,7 +59,11 @@
             height: 39px;
             object-fit: cover;
             border-radius: 50%;
-            border: 4px solid rgb(225 225 225);
+            border: 4px solid rgb(221 221 221);
+
+            @media(max-width: $breakpoint600) {
+                border-color: #f6f6f6;
+            }
         }
     }
     &__title {
@@ -30,10 +71,18 @@
         font-size: 24px;
         color: $dark-gray;
 
+        @media(max-width: $breakpoint768) {
+            font-size: 18px;
+        }
+
         & span {
             font-weight: 400;
             font-size: 20px;
             color: #afafaf;
+
+            @media(max-width: $breakpoint768) {
+                font-size: 15px;
+            }
         }
     }
     &__text {
@@ -42,5 +91,10 @@
         font-size: 16px;
         font-weight: 500;
         color: $dark-gray;
+
+        @media(max-width: $breakpoint600) {
+            margin-top: 6px;
+            font-size: 12px;
+        }
     }
 }
